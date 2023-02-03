@@ -103,8 +103,63 @@ img {
 
 
 
+/*header*/
 
 .bg-header-black{
 	background-color: black;
 	display: flex;
+}
+.logo-header{
+
+}
+.logo-header {
+	width: 100px;
+}
+.d-flex{
+	display: flex;
+}
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding:1rem;
+}
+.gaptwo{
+	gap: 2rem;
+}
+.color-white{
+	color:white;
+}
+.padd-two{
+	padding: 2rem;
+}
+.li-header {
+	padding: 1rem;
+	background: #F8C44C;
+}
+.logo-header {
+	width: 165px;
+}
+
+/*FOOTER*/
+.site-footer{
+	background-color: black;
+}
+.j-content-center{
+	justify-content: center ;
+	align-items: center;
+}
+.align-center{
+	align-items: center;
+}
+.space-between{
+	justify-content: space-between;
+}
+.ul-footer{
+padding-bottom: 2rem;
+}
+.droitfooter{
+	padding-bottom: 1rem;
+	text-align: center;
+
 }

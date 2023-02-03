@@ -8,3 +8,5 @@ get_header();
     <p> aaaaaaaaaaaaaaaaaaaaa </p>
     <p> aaaaaaaaaaaaaaaaaaaaa </p>
 </section>
+<?php
+get_footer();

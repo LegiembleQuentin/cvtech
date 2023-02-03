@@ -25,16 +25,18 @@
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'cvtech' ); ?></a>
 
-    <header id="masthead" class="site-header bg-header-black">
-        <div class="wrap-header">
-            <div>
-                <img src="" alt="">
+    <header id="masthead" class="site-header bg-header-black padd-two">
+        <div class="wrap1 header">
+            <div class="logo-header">
+                <img src="./wp-content/themes/cvtech/inc/img/logo-CvTech.png" alt="">
             </div>
-            <nav class="">
-                <ul>
-                    <li><a href="" title="">Contactez-Nous</a></li>
-                    <li class="homelink"><a href="" title="">Inscription</a></li>
-                    <li class="homelink"><a href="" title="">Connexion</a></li>
+            <nav>
+                <ul class="d-flex gaptwo">
+                    <li class="li-header"><a class="color-white box-yellow" href="" title="">Contactez-Nous</a></li>
+                    <li  class="li-header" ><a class="color-white box-yellow" href="" title="">Inscription</a></li>
+                    <li  class="li-header" ><a class="color-white box-yellow" href="" title="">Connexion</a></li>
+<!--                    <li><a class="color-white" href="" title="">Mon compte</a></li>-->
+<!--                    <li ><a class="color-white" href="" title="">Déco</a></li>-->
                 </ul>
         </div>
         </nav>
