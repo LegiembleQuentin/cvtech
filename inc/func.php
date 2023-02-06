@@ -69,3 +69,15 @@ function get_meta_image_src($meta, $key, $format = '')
         }
     }
 }
+
+function showJson($data)
+{
+    header('Content-type: application/json');
+    $json = json_encode($data);
+    if($json){
+        die($json);
+    }
+    else {
+        die('Error in json encoding');
+    }
+}
