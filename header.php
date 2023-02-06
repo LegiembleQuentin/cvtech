@@ -27,7 +27,7 @@
 
         <div class="wrap1 header">
             <div class="logo-header">
-                <img src="./wp-content/themes/cvtech/inc/img/logo-CvTech-rogner.png" alt="">
+                <img src="<?= asset('/img/logo-CvTech-rogner.png')?>" alt="">
             </div>
             <nav class="d-block">
                 <ul class="d-flex gaptwo">
