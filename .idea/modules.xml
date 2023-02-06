@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/cvtech.iml" filepath="$PROJECT_DIR$/.idea/cvtech.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../../../../wordpress_site_pizzanet/pizzanet_site/wp-content/themes/pizzanet/.idea/pizzanet.iml" filepath="$PROJECT_DIR$/../../../../../wordpress_site_pizzanet/pizzanet_site/wp-content/themes/pizzanet/.idea/pizzanet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../../wordpress_1/wonder/wonder_site/wp-content/themes/wonder/.idea/wonder.iml" filepath="$PROJECT_DIR$/../../../../../wordpress_1/wonder/wonder_site/wp-content/themes/wonder/.idea/wonder.iml" />
     </modules>
   </component>
 </project>
