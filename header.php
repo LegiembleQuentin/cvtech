@@ -38,8 +38,7 @@
                         <li class="li-header border-twenty"><a class="color-white box-yellow " href="" title="">Contactez-Nous</a></li>
                         <li  class="li-header border-twenty" ><a class="color-white box-yellow " href="" title="">Inscription</a></li>
                         <li  class="li-header border-twenty" ><a class="color-white box-yellow " href="" title="">Connexion</a></li>
-                        <!--                    <li><a class="color-white" href="" title="">Mon compte</a></li>-->
-                        <!--                    <li ><a class="color-white" href="" title="">Déco</a></li>-->
+
                     </div>
                 </ul>
         </div>

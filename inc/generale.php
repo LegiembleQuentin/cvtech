@@ -82,6 +82,10 @@ function cvtech_scripts() {
     if(is_page_template('template-register.php')) {
         wp_enqueue_script('register-js', get_template_directory_uri() . '/asset/js/register.js', array(), _S_VERSION, true);
     }
-}
 
+    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+        wp_enqueue_script( 'comment-reply' );
+    }
+
+}
 add_action( 'wp_enqueue_scripts', 'cvtech_scripts' );
