@@ -109,7 +109,7 @@ function cvtech_scripts() {
     }
 
     if(is_page_template( 'template-cgu.php' )) {
-        wp_enqueue_style('cgu-css', get_template_directory_uri() . '/asset/css/cgu.css', array(), _S_VERSION);
+        wp_enqueue_style('cgu-css', get_template_directory_uri() . 'inc/asset/css/cgu.css', array(), _S_VERSION);
     }
 }
 add_action( 'wp_enqueue_scripts', 'cvtech_scripts' );
