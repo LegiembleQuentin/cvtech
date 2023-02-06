@@ -228,3 +228,33 @@ padding-bottom: 2rem;
 	background-color: black;
 	color: white;
 }
+
+/*404*/
+.page-404 {
+	font-size: 32rem;
+	text-align: center;
+}
+.text-sous-404 {
+	font-size: 3rem;
+	text-align: center;
+	padding-bottom: 4rem;
+}
+
+/*mention legale*/
+.title-mention {
+	font-size: 25px;
+	padding-bottom: 1.9rem;
+}
+.sous-title-mention{
+	font-size: 20px;
+	padding-bottom: 1.9rem;
+}
+.text-center{
+	text-align: center;
+}
+.paragraphe {
+	padding-bottom: 2rem;
+}
+.spoofer {
+	line-height: 26px;
+}
