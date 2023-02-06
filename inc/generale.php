@@ -56,6 +56,7 @@ function cvtech_scripts() {
 
     if(is_page_template('template-home.php')){
         wp_enqueue_style('flexslider-css', get_template_directory_uri() . '/asset/flexslider/flexslider.css', array(), _S_VERSION);
+        wp_enqueue_style('home-style', get_template_directory_uri() . '/asset/css/style-home.css', array(), _S_VERSION);
     }
 
     if(is_page_template( 'template-cgu.php' )) {
@@ -81,10 +82,6 @@ function cvtech_scripts() {
     }
     if(is_page_template('template-register.php')) {
         wp_enqueue_script('register-js', get_template_directory_uri() . '/asset/js/register.js', array(), _S_VERSION, true);
-    }
-
-    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-        wp_enqueue_script( 'comment-reply' );
     }
 
 }
