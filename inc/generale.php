@@ -79,12 +79,11 @@ function cvtech_scripts() {
         wp_enqueue_script('register-js', get_template_directory_uri() . '/asset/js/register.js', array(), _S_VERSION, true);
     }
 
-=======
+
     wp_enqueue_style( 'cvtech-style', get_stylesheet_uri(), array(), _S_VERSION );
 
     wp_style_add_data( 'cvtech-style', 'rtl', 'replace' );
 
-    wp_enqueue_script( 'cvtech-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'cvtech-burger', get_template_directory_uri() . '/inc/js/burger.js', array(), _S_VERSION, true );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
