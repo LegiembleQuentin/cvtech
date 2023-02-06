@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/cvtech.iml" filepath="$PROJECT_DIR$/.idea/cvtech.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../../wordpress_site_pizzanet/pizzanet_site/wp-content/themes/pizzanet/.idea/pizzanet.iml" filepath="$PROJECT_DIR$/../../../../../wordpress_site_pizzanet/pizzanet_site/wp-content/themes/pizzanet/.idea/pizzanet.iml" />
     </modules>
   </component>
 </project>

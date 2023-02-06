@@ -22,32 +22,8 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Generic
-	- Normalize
-	- Box sizing
-# Base
-	- Typography
-	- Elements
-	- Links
-	- Forms
-## Layouts
-# Components
-	- Navigation
-	- Posts and pages
-	- Comments
-	- Widgets
-	- Media
-	- Captions
-	- Galleries
-# plugins
-	- Jetpack infinite scroll
-# Utilities
-	- Accessibility
-	- Alignments
 
+<<<<<<< HEAD
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -66,16 +42,27 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+=======
+>>>>>>> prince
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+<<<<<<< HEAD
+=======
+}
+
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+>>>>>>> prince
 }
 .clear:before,.clear:after { content:' '; display:table; }
 .clear:after { clear:both; }
 .clear { *zoom:1;}
 :root {
 
+<<<<<<< HEAD
 }
 html{
 	font-size: 62.5%;
@@ -108,3 +95,124 @@ img {
 	background-color: black;
 	display: flex;
 }
+
+.logo-header{
+
+}
+.logo-header {
+	width: 100px;
+}
+.d-flex{
+	display: flex;
+}
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding:1rem;
+}
+.gaptwo{
+	gap: 2rem;
+}
+.color-white{
+	color:white;
+}
+.padd-two{
+	padding: 2rem;
+}
+.li-header {
+	padding: 1rem;
+	background: #F8C44C;
+}
+.logo-header {
+	width: 165px;
+}
+
+/*FOOTER*/
+.site-footer{
+	background-color: black;
+}
+.j-content-center{
+	justify-content: center ;
+	align-items: center;
+}
+.align-center{
+	align-items: center;
+}
+.space-between{
+	justify-content: space-between;
+}
+.ul-footer{
+padding-bottom: 2rem;
+}
+.droitfooter{
+	padding-bottom: 1rem;
+	text-align: center;
+}
+
+.d-none{
+	display:none;
+}
+.d-block{
+	display:flex;
+}
+#burger-menu {
+	display: none;
+}
+
+#burger-menu.open {
+	display: block;
+}
+.border-twenty{
+	border-radius:20px;
+}
+
+@media only screen and (max-width: 850px) {
+	.d-none{
+		display:block;
+	}
+	.d-block{
+		display:none;
+	}
+	#burger-menu {
+		background-color: lightgray;
+		display: none;
+		position: absolute;
+		top: 60px;
+		right: 0;
+		width: 250px;
+	}
+
+	#burger-menu.open {
+		display: block;
+	}
+
+	#burger-menu ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	#burger-menu li {
+		border-bottom: 1px solid gray;
+	}
+
+	#burger-menu a {
+		display: block;
+		padding: 10px;
+		text-decoration: none;
+	}
+
+	#burger-menu a:hover {
+		background-color: gray;
+		color: white;
+	}
+}
+
+=======
+.wrap {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+>>>>>>> prince
