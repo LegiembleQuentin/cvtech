@@ -216,8 +216,8 @@ padding-bottom: 2rem;
 
 /*cgu !!!!!!!!!!!!!!*/
 .color-cgu {
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
 }
 
 /*404*/
@@ -232,6 +232,9 @@ padding-bottom: 2rem;
 }
 
 /*mention legale*/
+.color-cgu {
+	padding: 0 3rem;
+}
 .title-mention {
 	font-size: 25px;
 	padding-bottom: 1.9rem;
@@ -249,4 +252,30 @@ padding-bottom: 2rem;
 .spoofer {
 	line-height: 26px;
 }
+
+/*404*/
+.color-cgu {
+	padding: 0 3rem;
+}
+.page-404 {
+	font-size: 10rem;
+	text-align: center;
+}
+
+.text-sous-404 {
+	font-size: 2rem;
+	text-align: center;
+	padding-bottom: 8rem;
+}
+
+/*condition*/
+
+.color-cgu {
+	padding: 0 3rem;
+	margin: 2rem;
+}
+
+
+
+
 
