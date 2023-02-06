@@ -218,8 +218,8 @@ img {
 
 /*cgu !!!!!!!!!!!!!!*/
 .color-cgu {
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
 }
 
 /*404*/
@@ -234,6 +234,9 @@ img {
 }
 
 /*mention legale*/
+.color-cgu {
+	padding: 2rem;
+}
 .title-mention {
 	font-size: 25px;
 	padding-bottom: 1.9rem;
@@ -251,6 +254,35 @@ img {
 .spoofer {
 	line-height: 26px;
 }
+
+
+/*404*/
+.color-cgu {
+	padding: 0 3rem;
+}
+.page-404 {
+	font-size: 10rem;
+	text-align: center;
+}
+
+.text-sous-404 {
+	font-size: 2rem;
+	text-align: center;
+	padding-bottom: 8rem;
+}
+
+/*condition*/
+
+.color-cgu {
+	padding: 2rem;
+	margin: 2rem;
+}
+
+
+
+
+
+
 #close-menu-button{
 	font-size: 30px;
 	position: absolute;
@@ -291,3 +323,4 @@ span.dashicons.dashicons-facebook.color-white {
 	padding: 0 10rem;
 	padding-bottom: 2rem;
 }
+

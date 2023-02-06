@@ -94,4 +94,7 @@ function cvtech_scripts() {
     }
 
 }
+
 add_action( 'wp_enqueue_scripts', 'cvtech_scripts' );
+
+
