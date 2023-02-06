@@ -13,15 +13,15 @@
 
 	<footer id="colophon" class="site-footer">
         <div >
-            <div class="j-content-center space-between d-flex header padding-footter">
+            <div class="j-content-center space-between d-flex header padding-footer">
                 <div class="logo-header">
                     <img src="<?= asset('/img/logo-CvTech-rogner.png')?>" alt="">
 
                 </div>
                 <div class="d-flex gapp-footer-dashicon">
-                    <span class="dashicons dashicons-twitter color-white"></span>
-                    <span class="dashicons dashicons-facebook color-white"></span>
-                    <span class="dashicons dashicons-linkedin color-white "></span>
+                    <img class="img-footer" src="<?= asset('/img/reseau-facebook.png')?>" alt="">
+                    <img class="img-footer" src="<?= asset('/img/reseau-instagram.png')?>" alt="">
+                    <img class="img-footer" src="<?= asset('/img/reseau-twitter.png')?>" alt="">
                 </div>
             </div>
             <div class="wrap1">

@@ -112,8 +112,7 @@ img {
 }
 .color-white{
 	color:white;
-	font-size: 28px;
-
+	font-size: 15px;
 }
 .padd-two{
 	padding: 2rem;
@@ -123,7 +122,7 @@ img {
 	background: #F8C44C;
 }
 .logo-header {
-	width: 310px;
+	width: 200px;
 }
 
 /*FOOTER*/
@@ -276,18 +275,24 @@ img {
 	color: #F8C44C;
 }
 span.dashicons.dashicons-twitter.color-white {
-	font-size: 60px;
+	font-size: 35px;
 }
 span.dashicons.dashicons-linkedin.color-white {
-	font-size: 60px;
+	font-size: 35px;
 }
 span.dashicons.dashicons-facebook.color-white {
-	font-size: 60px;
+	font-size: 35px;
 }
 .gapp-footer-dashicon {
 	gap: 6rem;
 }
-.padding-footter {
-	padding: 0 10rem;
-	padding-bottom: 2rem;
+.padding-footer{
+	padding: 0 3rem;
+	padding-bottom: 1rem;
+}
+.img-footer{
+	width: 35px;
+}
+header#masthead {
+	padding: 1rem;
 }
