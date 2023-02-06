@@ -47,6 +47,15 @@ function cvtech_widgets_init() {
 }
 add_action( 'widgets_init', 'cvtech_widgets_init' );
 
+function xx__update_custom_roles() {
+    if ( get_option( 'custom_roles_version' ) < 1 ) {
+        add_role( 'candidat', 'Candidat', array( 'read' => true));
+        add_role('recruteur','Recruteur',array('read'=>true));
+        update_option( 'custom_roles_version', 1 );
+    }
+}
+add_action( 'init', 'xx__update_custom_roles' );
+
 /**
  * Enqueue scripts and styles.
  */
