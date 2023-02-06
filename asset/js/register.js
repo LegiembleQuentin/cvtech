@@ -27,13 +27,13 @@ let errorBirthdate = document.querySelector('#error_birthdate_register')
 
 
 let errors = {
-    // 'name': 'Veuillez renseigner ce champ',
-    // 'firstname': 'Veuillez renseigner ce champ',
-    // 'identifiant': 'Veuillez renseigner ce champ',
-    // 'email': 'Veuillez renseigner ce champ',
-    // 'password': 'Veuillez renseigner ce champ',
-    // 'phone': '',
-    // 'birthdate': '',
+    'name': 'Veuillez renseigner ce champ',
+    'firstname': 'Veuillez renseigner ce champ',
+    'identifiant': 'Veuillez renseigner ce champ',
+    'email': 'Veuillez renseigner ce champ',
+    'password': 'Veuillez renseigner ce champ',
+    'phone': '',
+    'birthdate': '',
 };
 
 inputName.addEventListener('change', function(e) {
