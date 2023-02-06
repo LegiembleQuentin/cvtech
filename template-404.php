@@ -1,17 +1,11 @@
 <?php
 /* Template Name: 404 */
 get_header(); ?>
-
-    <div id="main">
-        <div class="message">
-            <h1>404</h1>
-            <h3>La page n'hésite pas</h3>
-        </div>
-        <div class="footer-error">
-            <a href="#" title="home">Regresar<span></span></a>
-        </div>
+<section class="color-cgu">
+    <div class="">
+        <h1 class="page-404">404</h1>
+        <p class="text-sous-404">la page que vous recherchez n'existe pas</p>
     </div>
-
-
+</section>
 <?php
 get_footer();

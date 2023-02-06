@@ -23,8 +23,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 
-<<<<<<< HEAD
---------------------------------------------------------------*/
+
+
 
 /*--------------------------------------------------------------
 # Generic
@@ -42,27 +42,25 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-=======
->>>>>>> prince
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-<<<<<<< HEAD
-=======
+
 }
 
 html {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
->>>>>>> prince
+
 }
 .clear:before,.clear:after { content:' '; display:table; }
 .clear:after { clear:both; }
 .clear { *zoom:1;}
 :root {
 
-<<<<<<< HEAD
+
 }
 html{
 	font-size: 62.5%;
@@ -209,10 +207,46 @@ padding-bottom: 2rem;
 	}
 }
 
-=======
+
 .wrap {
 	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
 }
->>>>>>> prince
+
+/*cgu !!!!!!!!!!!!!!*/
+.color-cgu {
+	background-color: black;
+	color: white;
+}
+
+/*404*/
+.page-404 {
+	font-size: 32rem;
+	text-align: center;
+}
+.text-sous-404 {
+	font-size: 3rem;
+	text-align: center;
+	padding-bottom: 4rem;
+}
+
+/*mention legale*/
+.title-mention {
+	font-size: 25px;
+	padding-bottom: 1.9rem;
+}
+.sous-title-mention{
+	font-size: 20px;
+	padding-bottom: 1.9rem;
+}
+.text-center{
+	text-align: center;
+}
+.paragraphe {
+	padding-bottom: 2rem;
+}
+.spoofer {
+	line-height: 26px;
+}
+
