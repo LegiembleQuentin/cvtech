@@ -24,8 +24,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 
 
-
-
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -106,14 +104,16 @@ img {
 .header{
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
-	padding:1rem;
+	justify-content: space-between;
+	padding: 1rem;
 }
 .gaptwo{
 	gap: 2rem;
 }
 .color-white{
 	color:white;
+	font-size: 28px;
+
 }
 .padd-two{
 	padding: 2rem;
@@ -123,7 +123,7 @@ img {
 	background: #F8C44C;
 }
 .logo-header {
-	width: 165px;
+	width: 310px;
 }
 
 /*FOOTER*/
@@ -141,7 +141,8 @@ img {
 	justify-content: space-between;
 }
 .ul-footer{
-padding-bottom: 2rem;
+	padding-bottom: 5rem;
+	gap: 15rem;
 }
 .droitfooter{
 	padding-bottom: 1rem;
@@ -163,6 +164,7 @@ padding-bottom: 2rem;
 }
 .border-twenty{
 	border-radius:20px;
+	align-self: center;
 }
 
 @media only screen and (max-width: 850px) {
@@ -177,12 +179,14 @@ padding-bottom: 2rem;
 		display: none;
 		position: absolute;
 		top: 60px;
-		right: 0;
+		right: 20px;
 		width: 250px;
 	}
 
 	#burger-menu.open {
 		display: block;
+		box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+
 	}
 
 	#burger-menu ul {
@@ -191,9 +195,7 @@ padding-bottom: 2rem;
 		padding: 0;
 	}
 
-	#burger-menu li {
-		border-bottom: 1px solid gray;
-	}
+
 
 	#burger-menu a {
 		display: block;
@@ -253,6 +255,7 @@ padding-bottom: 2rem;
 	line-height: 26px;
 }
 
+
 /*404*/
 .color-cgu {
 	padding: 0 3rem;
@@ -278,4 +281,46 @@ padding-bottom: 2rem;
 
 
 
+
+
+#close-menu-button{
+	font-size: 30px;
+	position: absolute;
+	left: 22rem;
+	border: none;
+	background: none;
+	color: white;
+}
+.a-header{
+	color: white;
+}
+.dashicons-menu {
+	color: white;
+	font-size: 40px;
+	color: white;
+	font-size: 90px;
+	position: absolute;
+	top: 5vh;
+	left: 82vw;
+}
+.dashicons-menu:before {
+	content: "\f333";
+	color: #F8C44C;
+}
+span.dashicons.dashicons-twitter.color-white {
+	font-size: 60px;
+}
+span.dashicons.dashicons-linkedin.color-white {
+	font-size: 60px;
+}
+span.dashicons.dashicons-facebook.color-white {
+	font-size: 60px;
+}
+.gapp-footer-dashicon {
+	gap: 6rem;
+}
+.padding-footter {
+	padding: 0 10rem;
+	padding-bottom: 2rem;
+}
 

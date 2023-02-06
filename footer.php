@@ -13,26 +13,27 @@
 
 	<footer id="colophon" class="site-footer">
         <div >
-            <div class="j-content-center space-between d-flex header">
+            <div class="j-content-center space-between d-flex header padding-footter">
                 <div class="logo-header">
-                    <img src="<?= asset('/img/logo-CvTech.png') ?>" alt="">
+                    <img src="<?= asset('/img/logo-CvTech-rogner.png')?>" alt="">
+
                 </div>
-                <div class="d-flex gaptwo">
+                <div class="d-flex gapp-footer-dashicon">
                     <span class="dashicons dashicons-twitter color-white"></span>
                     <span class="dashicons dashicons-facebook color-white"></span>
                     <span class="dashicons dashicons-linkedin color-white "></span>
                 </div>
             </div>
             <div class="wrap1">
-                <ul class="gaptwo d-flex center j-content-center ul-footer">
-                    <li class="color-white"><a href="#"></a> politique de confidentialité</li>
+                <ul class="gaptwo d-flex center j-content-center ul-footer ">
+                    <li class="color-white"><a href="#"></a> CGU</li>
                     <li class="color-white"><a href="#"></a> Mentions légales </li>
                     <li class="color-white"><a href="#"></a>Contactez-nous </li>
                     <li class="color-white"><a href="#"></a>Gérer les Cookies </li>
                 </ul>
             </div>
             <div class="color-white droitfooter ">
-                <p>2023 - CVTECH-Tous Droits réservés</p>
+                <p> &copy; 2023 - CVTECH-Tous Droits réservés</p>
             </div>
         </div>
 	</footer><!-- #colophon -->

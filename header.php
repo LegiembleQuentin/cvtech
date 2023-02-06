@@ -23,19 +23,18 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-    <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'cvtech' ); ?></a>
-
     <header id="masthead" class="site-header bg-header-black padd-two">
 
         <div class="wrap1 header">
             <div class="logo-header">
-                <img src="<?= asset('/img/logo-CvTech.png')?>" alt="">
+                <img src="<?= asset('/img/logo-CvTech-rogner.png')?>" alt="">
             </div>
             <nav class="d-block">
                 <ul class="d-flex gaptwo">
 
                     <div class="gap d-flex d-block gaptwo ">
-                        <li class="li-header border-twenty"><a class="color-white box-yellow " href="" title="">Contactez-Nous</a></li>
+                        <li class=" border-twenty"><a class="color-white box-yellow" href="" title="">Design</a></li>
+                        <li class=" border-twenty"><a class="color-white box-yellow" href="" title="">Contactez-Nous</a></li>
                         <li  class="li-header border-twenty" ><a class="color-white box-yellow " href="" title="">Inscription</a></li>
                         <li  class="li-header border-twenty" ><a class="color-white box-yellow " href="" title="">Connexion</a></li>
 
@@ -44,14 +43,15 @@
         </div>
         </nav>
         <div class="d-none">
-            <button id="burger-menu-button">&#9776;</button>
-            <nav id="burger-menu">
-                <ul>
-                    <li><a href="#">Contactez-Nous</a></li>
-                    <li><a href="#">Inscription</a></li>
-                    <li><a href="#">Connexion</a></li>
-                </ul>
-            </nav>
+            <span class="dashicons dashicons-menu burger-menu-button"></span>
+                <nav id="burger-menu">
+                    <button id="close-menu-button">&times;</button>
+                    <ul>
+                        <li  class=" border-top li-header"><a class="a-header" href="#">Contactez-Nous</a></li>
+                        <li  class="li-header"><a class="a-header"="#">Inscription</a></li>
+                        <li  class="li-header"><a class="a-header" href="#">Connexion</a></li>
+                    </ul>
+                </nav>
         </div>
     </header><!-- #masthead -->
 
