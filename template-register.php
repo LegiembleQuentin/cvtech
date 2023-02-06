@@ -10,30 +10,30 @@ get_header(); ?>
     <form action="" id="form_register">
 
         <label for="name">Nom <span class="required">*</span></label>
-        <input type="text" name="name" id="name" value="Nguyen">
+        <input type="text" name="name" id="name">
         <span id="error_name_register"></span>
 
         <label for="firstname">Prenom <span class="required">*</span></label>
-        <input type="text" name="firstname" id="firstname" value="Maxime">
+        <input type="text" name="firstname" id="firstname">
         <span id="error_firstname_register"></span>
 
         <label for="id">Indentifiant <span class="required">*</span></label>
-        <input type="text" name="id" id="id" value="MaxNG">
+        <input type="text" name="id" id="id">
         <span id="error_id_register"></span>
 
         <label for="email">email <span class="required">*</span></label>
-        <input type="text" name="email" id="email" value="adressepro@gmail.com">
+        <input type="text" name="email" id="email">
         <span id="error_email_register"></span>
 
         <label for="password">Mot de passe <span class="required">*</span></label>
-        <input type="password" name="password" id="password" value="mdpsecur">
+        <input type="password" name="password" id="password">
         <span id="error_password_register"></span>
 
         <label for="password2">Confirmer le mot de passe <span class="required">*</span></label>
-        <input type="password" name="password2" id="password2" value="mdpsecur">
+        <input type="password" name="password2" id="password2">
 
         <label for="phone">Numero de telephone</label>
-        <input type="text" name="phone" id="phone" value="0623548688">
+        <input type="text" name="phone" id="phone">
         <span id="error_phone_register"></span>
 
         <label for="birthdate">Date de naissance</label>

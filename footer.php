@@ -15,7 +15,7 @@
         <div >
             <div class="j-content-center space-between d-flex header">
                 <div class="logo-header">
-                    <img src="./wp-content/themes/cvtech/inc/img/logo-CvTech.png" alt="">
+                    <img src="<?= asset('/img/logo-CvTech.png') ?>" alt="">
                 </div>
                 <div class="d-flex gaptwo">
                     <span class="dashicons dashicons-twitter color-white"></span>

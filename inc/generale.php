@@ -103,8 +103,6 @@ function cvtech_scripts() {
     wp_deregister_script('jquery');
     wp_enqueue_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js', array(), _S_VERSION, true);
 
-    wp_enqueue_script( 'cvtech-burger', get_template_directory_uri() . '/asset/js/burger.js', array(), _S_VERSION, true );
-
     wp_add_inline_script( 'jquery', 'const MYSCRIPT = ' . json_encode( array(
             'ajaxUrl' => admin_url( 'admin-ajax.php' ),
             'home'    => path('/'),
@@ -112,6 +110,7 @@ function cvtech_scripts() {
         ) ), 'before' );
 
 
+    wp_enqueue_script( 'cvtech-burger', get_template_directory_uri() . '/asset/js/burger.js', array(), _S_VERSION, true );
     wp_enqueue_script('function-js', get_template_directory_uri() . '/asset/js/function.js', array(), _S_VERSION, true);
 
     if(is_page_template('template-register.php')){

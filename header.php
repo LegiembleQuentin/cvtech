@@ -29,7 +29,7 @@
 
         <div class="wrap1 header">
             <div class="logo-header">
-                <img src="./wp-content/themes/cvtech/inc/img/logo-CvTech.png" alt="">
+                <img src="<?= asset('/img/logo-CvTech.png')?>" alt="">
             </div>
             <nav class="d-block">
                 <ul class="d-flex gaptwo">
