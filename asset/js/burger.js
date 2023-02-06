@@ -1,4 +1,4 @@
-const button = document.getElementById('burger-menu-button');
+const button = document.querySelector('.burger-menu-button');
 const menu = document.getElementById('burger-menu');
 const closeButton = document.getElementById("close-menu-button");
 

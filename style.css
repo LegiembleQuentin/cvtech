@@ -112,6 +112,8 @@ img {
 }
 .color-white{
 	color:white;
+	font-size: 28px;
+
 }
 .padd-two{
 	padding: 2rem;
@@ -139,7 +141,8 @@ img {
 	justify-content: space-between;
 }
 .ul-footer{
-padding-bottom: 2rem;
+	padding-bottom: 5rem;
+	gap: 15rem;
 }
 .droitfooter{
 	padding-bottom: 1rem;
@@ -161,6 +164,7 @@ padding-bottom: 2rem;
 }
 .border-twenty{
 	border-radius:20px;
+	align-self: center;
 }
 
 @media only screen and (max-width: 850px) {
@@ -257,4 +261,33 @@ padding-bottom: 2rem;
 }
 .a-header{
 	color: white;
+}
+.dashicons-menu {
+	color: white;
+	font-size: 40px;
+	color: white;
+	font-size: 90px;
+	position: absolute;
+	top: 5vh;
+	left: 82vw;
+}
+.dashicons-menu:before {
+	content: "\f333";
+	color: #F8C44C;
+}
+span.dashicons.dashicons-twitter.color-white {
+	font-size: 60px;
+}
+span.dashicons.dashicons-linkedin.color-white {
+	font-size: 60px;
+}
+span.dashicons.dashicons-facebook.color-white {
+	font-size: 60px;
+}
+.gapp-footer-dashicon {
+	gap: 6rem;
+}
+.padding-footter {
+	padding: 0 10rem;
+	padding-bottom: 2rem;
 }
