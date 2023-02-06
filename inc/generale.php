@@ -60,9 +60,11 @@ function cvtech_scripts() {
     }
 
     if(is_page_template( 'template-cgu.php' )) {
-        wp_enqueue_style('cgu-css', get_template_directory_uri() . 'inc/asset/css/cgu.css', array(), _S_VERSION);
+        wp_enqueue_style('cgu-css', get_template_directory_uri() . '/asset/css/cgu.css', array(), _S_VERSION);
     }
-
+    if(is_page_template('template-register.php')) {
+        wp_enqueue_style('register-css', get_template_directory_uri() . '/asset/css/register.css', array(), _S_VERSION);
+    }
     //JS
     wp_deregister_script('jquery');
     wp_enqueue_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js', array(), _S_VERSION, true);

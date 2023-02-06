@@ -24,7 +24,7 @@
                     <img class="img-footer" src="<?= asset('/img/reseau-twitter.png')?>" alt="">
                 </div>
             </div>
-            <div class="wrap1">
+            <div class="wrap1 padding-footer">
                 <ul class="gaptwo d-flex center j-content-center ul-footer ">
                     <li class="color-white"><a href="#"></a> CGU</li>
                     <li class="color-white"><a href="#"></a> Mentions légales </li>
@@ -32,7 +32,7 @@
                     <li class="color-white"><a href="#"></a>Gérer les Cookies </li>
                 </ul>
             </div>
-            <div class="color-white droitfooter ">
+            <div class="color-white droitfooter padding-footer ">
                 <p> &copy; 2023 - CVTECH-Tous Droits réservés</p>
             </div>
         </div>
