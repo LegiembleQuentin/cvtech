@@ -24,8 +24,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 
 
-
-
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -106,8 +104,8 @@ img {
 .header{
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
-	padding:1rem;
+	justify-content: space-between;
+	padding: 1rem;
 }
 .gaptwo{
 	gap: 2rem;
@@ -123,7 +121,7 @@ img {
 	background: #F8C44C;
 }
 .logo-header {
-	width: 165px;
+	width: 310px;
 }
 
 /*FOOTER*/
@@ -177,12 +175,14 @@ padding-bottom: 2rem;
 		display: none;
 		position: absolute;
 		top: 60px;
-		right: 0;
+		right: 20px;
 		width: 250px;
 	}
 
 	#burger-menu.open {
 		display: block;
+		box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+
 	}
 
 	#burger-menu ul {
@@ -191,9 +191,7 @@ padding-bottom: 2rem;
 		padding: 0;
 	}
 
-	#burger-menu li {
-		border-bottom: 1px solid gray;
-	}
+
 
 	#burger-menu a {
 		display: block;
@@ -249,4 +247,14 @@ padding-bottom: 2rem;
 .spoofer {
 	line-height: 26px;
 }
-
+#close-menu-button{
+	font-size: 30px;
+	position: absolute;
+	left: 22rem;
+	border: none;
+	background: none;
+	color: white;
+}
+.a-header{
+	color: white;
+}
