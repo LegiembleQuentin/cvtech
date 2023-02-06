@@ -106,3 +106,4 @@ function cvtech_scripts() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'cvtech_scripts' );
+wp_enqueue_style( 'cvtech-style', get_stylesheet_uri(), array(), _S_VERSION );
