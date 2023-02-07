@@ -15,6 +15,7 @@ section#register {
     color: #F9F8F9;
     padding: 4rem;
     overflow: hidden;
+    position:relative;
 }
 input#register_submit {
     background-color: transparent;
@@ -58,12 +59,29 @@ header{
 }
 .tache-left{
     position: absolute;
-    left: -47vw;
-    top: 96vh;
-    transform: rotate(90deg);
+    left: -51vw;
+    top: 72vh;
+    transform: rotate(106deg);
     width: 164rem;
 }
-
+.tache-right {
+    position: absolute;
+    top: -1vh;
+    left: 39vw;
+    transform: rotate(358deg);
+    width: 1526px;
+}
+div#page {
+    overflow-x: hidden;
+}
+@media (max-width: 768px) {
+    .tache-left{
+        display:none;
+    }
+    .tache-right {
+    display:none;
+    }
+}
 @media (max-width: 768px) {
     input {
         width: 100%;

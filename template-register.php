@@ -9,7 +9,7 @@ get_header(); ?>
             <img class="" src="<?= asset('/img/right_tache.png')?>" alt="">
         </div>
         <div class="tache-right">
-            <img class="" src="<?= asset('/img/right_tache-bon.png')?>" alt="">
+            <img class="" src="<?= asset('/img/right_tache.png')?>" alt="">
         </div>
 
         <div class="logo-inscription">
