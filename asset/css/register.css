@@ -60,7 +60,7 @@ header{
 .tache-left{
     position: absolute;
     left: 19vw;
-    top: 48vh;
+    top: 42vh;
     transform: rotate(88deg);
     width: 39rem;
 }
