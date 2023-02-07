@@ -42,9 +42,8 @@ get_header();
                 <span id="cv_error error_main_desc_cv"></span>
             </div>
 
-            <h2>Compétences</h2>
-
             <div id="cv_skills">
+                <h2>Compétences</h2>
                 <div id="skill_container">
                     <div class="one_skill" id="skill_1_container">
                         <input type="text" class="input_skill" name="skill_1" id="skill_1" placeholder="HTML5">
@@ -57,9 +56,8 @@ get_header();
 
             </div>
 
-            <h2>Experiences professionelles</h2>
-
             <div id="cv_exp">
+                <h2>Experiences professionelles</h2>
                 <div id="exp_container">
                     <div class="one_exp">
                         <label for="job_name">Titre de l'emploi </label>
@@ -93,8 +91,36 @@ get_header();
 
             </div>
 
-            <div id="cv_formations">
 
+            <div id="cv_formations">
+                <h2>Formations</h2>
+                <div id="formation_container">
+                    <div class="one_formation">
+                        <label for="formation_name">Titre de la formation </label>
+                        <input type="text" name="formation_name" id="formation_name" placeholder="Bachelor développement web">
+                        <span class="cv_error error_formation" id="error_formation_name_1"></span>
+
+                        <label for="school">Ecole </label>
+                        <input type="text" name="school" id="school" placeholder="Need for school">
+                        <span class="cv_error error_school" id="error_school_1"></span>
+
+                        <label for="degree">Diplôme </label>
+                        <input type="text" name="degree" id="degree" placeholder="Bac +3">
+                        <span class="cv_error error_degree" id="error_degree_1"></span>
+
+                        <label for="forma_starting_date">Date de début </label>
+                        <input type="month" name="forma_starting_date" id="forma_starting_date" placeholder="MM / YYYY">
+                        <span class="cv_error error_forma_starting_date" id="error_forma_starting_date_1"></span>
+
+                        <label for="forma_ending_date">Date de fin </label>
+                        <input type="month" name="forma_ending_date" id="forma_ending_date" placeholder="MM / YYYY">
+                        <span class="cv_error error_forma_ending_date" id="error_forma_ending_date_1"></span>
+
+
+                    </div>
+                </div>
+
+                <button type="button" id="add_formation_button">Ajouter une formation</button>
             </div>
 
 
