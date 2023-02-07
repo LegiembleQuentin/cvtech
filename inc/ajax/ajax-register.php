@@ -64,7 +64,6 @@ function register(){
                 'phone' => $phone,
                 'age' => $age,
                 'email'=> $email,
-                'role'=> 'candidat',
                 'created_at' => current_time('mysql'),
             ),
             array(
