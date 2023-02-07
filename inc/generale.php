@@ -69,9 +69,14 @@ function cvtech_scripts() {
     }
 
     if(is_page_template( 'template-cgu.php' )) {
-        wp_enqueue_style('cgu-css', get_template_directory_uri() . 'inc/asset/css/cgu.css', array(), _S_VERSION);
+        wp_enqueue_style('cgu-css', get_template_directory_uri() . '/asset/css/cgu.css', array(), _S_VERSION);
     }
-
+    if(is_page_template('template-register.php')) {
+        wp_enqueue_style('register-css', get_template_directory_uri() . '/asset/css/register.css', array(), _S_VERSION);
+    }
+    if(is_page_template('template-contactus.php')) {
+        wp_enqueue_style('contact-css', get_template_directory_uri() . '/asset/css/contact.css', array(), _S_VERSION);
+    }
     //JS
     wp_deregister_script('jquery');
     wp_enqueue_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js', array(), _S_VERSION, true);
@@ -91,6 +96,11 @@ function cvtech_scripts() {
     }
     if(is_page_template('template-register.php')) {
         wp_enqueue_script('register-js', get_template_directory_uri() . '/asset/js/register.js', array(), _S_VERSION, true);
+    }
+
+    if(is_page_template('template-addcv_template1.php')){
+        wp_enqueue_script('addskill-js', get_template_directory_uri() . '/asset/js/js_cv/addskill.js', array(), _S_VERSION, true);
+        wp_enqueue_script('addexp-js', get_template_directory_uri() . '/asset/js/js_cv/addexp.js', array(), _S_VERSION, true);
     }
 
 }
