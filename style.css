@@ -167,7 +167,11 @@ img {
 	border-radius:20px;
 	align-self: center;
 }
-
+@media (max-width: 768px) {
+	.ul-footer {
+		gap:3rem;
+	}
+}
 @media only screen and (max-width: 850px) {
 	.d-none{
 		display:block;

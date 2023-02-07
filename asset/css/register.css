@@ -18,8 +18,10 @@ section#register {
 }
 input#register_submit {
     background-color: transparent;
-    border: 1px solid white;
-    color: white;
+    border: none;
+    color: black;
+    background-color: #F8C44C;
+    width:315px;
 }
 .title-register {
     text-align: center;
@@ -76,11 +78,7 @@ div#page {
     overflow-x: hidden;
 }
 input#register_submit:hover {
-    background-color: #F8C44C;
-    color: black;
-}
-input#register_submit:hover {
-    background-color: #F8C44C;
+    background-color: white;
     color: black;
 }
 @media (max-width: 768px) {

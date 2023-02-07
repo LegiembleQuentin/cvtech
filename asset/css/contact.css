@@ -17,8 +17,9 @@ textarea {
 }
 input#register_submit {
     background-color: transparent;
-    border: 1px solid white;
-    color: white;
+    border: none;
+    color: black;
+    background-color: #F8C44C;
 }
 form#formulaire {
     display: flex;
@@ -31,6 +32,6 @@ form#formulaire {
     color:white;
 }
 input#register_submit:hover {
-    background-color: #F8C44C;
+    background-color: white;
     color: black;
 }
