@@ -13,47 +13,45 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<?php wp_head(); ?>
+    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'cvtech' ); ?></a>
+    <header id="masthead" class="site-header bg-header-black">
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$cvtech_description = get_bloginfo( 'description', 'display' );
-			if ( $cvtech_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $cvtech_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+        <div class="wrap1 header">
+            <div class="logo-header">
+                <img src="<?= asset('/img/logo-CvTech-rogner.png')?>" alt="">
+            </div>
+            <nav class="d-block">
+                <ul class="d-flex gaptwo">
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cvtech' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+                    <div class="gap d-flex d-block gaptwo ">
+                        <li class=" border-twenty"><a class="color-white box-yellow" href="" title="">Design</a></li>
+                        <li class=" border-twenty"><a class="color-white box-yellow" href="" title="">Contactez-Nous</a></li>
+                        <li  class="li-header border-twenty" ><a class="color-white box-yellow " href="" title="">Inscription</a></li>
+                        <li  class="li-header border-twenty" ><a class="color-white box-yellow " href="" title="">Connexion</a></li>
+
+                    </div>
+                </ul>
+        </div>
+        </nav>
+        <div class="d-none">
+            <span class="dashicons dashicons-menu burger-menu-button"></span>
+                <nav id="burger-menu">
+                    <button id="close-menu-button">&times;</button>
+                    <ul>
+                        <li  class=" border-top li-header"><a class="a-header" href="#">Contactez-Nous</a></li>
+                        <li  class="li-header"><a class="a-header"="#">Inscription</a></li>
+                        <li  class="li-header"><a class="a-header" href="#">Connexion</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header><!-- #masthead -->
+
