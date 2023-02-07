@@ -59,10 +59,10 @@ header{
 }
 .tache-left{
     position: absolute;
-    left: -22vw;
-    top: 109vh;
-    transform: rotate(90deg);
-    width: 111rem;
+    left: 19vw;
+    top: 47vh;
+    transform: rotate(88deg);
+    width: 39rem;
 }
 .tache-right {
     position: absolute;
