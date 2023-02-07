@@ -120,6 +120,7 @@ img {
 .li-header {
 	padding: 1rem;
 	background: #F8C44C;
+	border: 1px white solid;
 }
 .logo-header {
 	width: 200px;
@@ -149,6 +150,7 @@ img {
 	padding-bottom: 1rem;
 	text-align: center;
 }
+
 
 .d-none{
 	display:none;
@@ -191,6 +193,8 @@ img {
 	#burger-menu.open {
 		display: block;
 		box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+		height: 610px;
+		background-color: #F8C44C;
 
 	}
 
@@ -223,8 +227,8 @@ img {
 
 /*cgu !!!!!!!!!!!!!!*/
 .color-cgu {
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
 }
 
 /*404*/
@@ -239,6 +243,9 @@ img {
 }
 
 /*mention legale*/
+.color-cgu {
+	padding: 2rem;
+}
 .title-mention {
 	font-size: 25px;
 	padding-bottom: 1.9rem;
@@ -256,6 +263,35 @@ img {
 .spoofer {
 	line-height: 26px;
 }
+
+
+/*404*/
+.color-cgu {
+	padding: 0 3rem;
+}
+.page-404 {
+	font-size: 10rem;
+	text-align: center;
+}
+
+.text-sous-404 {
+	font-size: 2rem;
+	text-align: center;
+	padding-bottom: 8rem;
+}
+
+/*condition*/
+
+.color-cgu {
+	padding: 2rem;
+	margin: 2rem;
+}
+
+
+
+
+
+
 #close-menu-button{
 	font-size: 30px;
 	position: absolute;
@@ -292,6 +328,12 @@ span.dashicons.dashicons-facebook.color-white {
 .gapp-footer-dashicon {
 	gap: 6rem;
 }
+
+.padding-footter {
+	padding: 0 10rem;
+	padding-bottom: 2rem;
+}
+
 .padding-footer{
 	padding: 0 3rem;
 	padding-bottom: 1rem;
@@ -302,3 +344,4 @@ span.dashicons.dashicons-facebook.color-white {
 header#masthead {
 	padding: 1rem;
 }
+>>>>>>> theo

@@ -47,6 +47,15 @@ function cvtech_widgets_init() {
 }
 add_action( 'widgets_init', 'cvtech_widgets_init' );
 
+function xx__update_custom_roles() {
+    if ( get_option( 'custom_roles_version' ) < 1 ) {
+        add_role( 'candidat', 'Candidat', array( 'read' => true));
+        add_role('recruteur','Recruteur',array('read'=>true));
+        update_option( 'custom_roles_version', 1 );
+    }
+}
+add_action( 'init', 'xx__update_custom_roles' );
+
 /**
  * Enqueue scripts and styles.
  */
@@ -89,5 +98,13 @@ function cvtech_scripts() {
         wp_enqueue_script('register-js', get_template_directory_uri() . '/asset/js/register.js', array(), _S_VERSION, true);
     }
 
+    if(is_page_template('template-addcv_template1.php')){
+        wp_enqueue_script('addskill-js', get_template_directory_uri() . '/asset/js/js_cv/addskill.js', array(), _S_VERSION, true);
+        wp_enqueue_script('addexp-js', get_template_directory_uri() . '/asset/js/js_cv/addexp.js', array(), _S_VERSION, true);
+    }
+
 }
+
 add_action( 'wp_enqueue_scripts', 'cvtech_scripts' );
+
+

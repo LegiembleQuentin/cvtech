@@ -82,3 +82,17 @@ function setErrorMessage(spanError, msgError) {
         spanError.innerText = msgError;
     }
 }
+
+function createElement(element, elName, elPlaceholder, elId, elClass, elType) {
+    let newEl = document.createElement(element);
+    if(elType){
+        newEl.type = elType;
+    }
+    newEl.name = elName;
+    newEl.id = elId;
+    newEl.placeholder = elPlaceholder;
+    if (elClass) {
+        newEl.classList.add(elClass);
+    }
+    return newEl;
+}
