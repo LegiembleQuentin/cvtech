@@ -2,15 +2,15 @@
 /* Template Name: Register */
 
 get_header(); ?>
-
+    <div class="tache-left">
+        <img class="" src="<?= asset('/img/right_tache.png')?>" alt="">
+    </div>
+    <div class="tache-right">
+        <img class="" src="<?= asset('/img/right_tache.png')?>" alt="">
+    </div>
 
     <section class="wrap1" id="register">
-        <div class="tache-left">
-            <img class="" src="<?= asset('/img/right_tache.png')?>" alt="">
-        </div>
-        <div class="tache-right">
-            <img class="" src="<?= asset('/img/right_tache.png')?>" alt="">
-        </div>
+
 
         <div class="logo-inscription">
             <img class="" src="<?= asset('/img/logo-inscription-cropped.svg')?>" alt="">
