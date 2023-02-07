@@ -44,13 +44,13 @@ get_header(); ?>
             </div>
             <div class="form-register">
                 <div class="form-register-div">
-                    <label class="paddbot-register"  for="password2">Confirmer le mot de passe <span class="required">*</span></label>
-                    <input type="password" name="password2" id="password2">
-                </div>
-                <div class="form-register-div">
                     <label class="paddbot-register" for="password">Mot de passe <span class="required">*</span></label>
                     <input type="password" name="password" id="password">
                     <span id="error_password_register"></span>
+                </div>
+                <div class="form-register-div">
+                    <label class="paddbot-register"  for="password2">Confirmer le mot de passe <span class="required">*</span></label>
+                    <input type="password" name="password2" id="password2">
                 </div>
             </div>
             <div class="form-register">

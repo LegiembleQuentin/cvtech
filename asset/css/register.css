@@ -4,6 +4,7 @@ body{
 header{
 
 }
+
 input {
     background-color: #F8C44C;
     border-radius: 8px;
@@ -60,26 +61,39 @@ header{
 .tache-left{
     position: absolute;
     left: 19vw;
-    top: 47vh;
+    top: 48vh;
     transform: rotate(88deg);
     width: 39rem;
 }
 .tache-right {
     position: absolute;
-    top: 18vh;
-    left: 39vw;
+    top: 17vh;
+    left: 53%;
     transform: rotate(358deg);
-    width: 1526px;
+    width: 154rem;
 }
+
 div#page {
     overflow-x: hidden;
 }
 @media (max-width: 768px) {
+    .dashicons-menu {
+        color: white;
+        font-size: 40px;
+        color: white;
+        font-size: 50px;
+        position: absolute;
+        top: 2vh;
+        left: 82vw;
+
     .tache-left{
         display:none;
     }
     .tache-right {
     display:none;
+    }
+    .form-register-div {
+        width: 33rem;
     }
 }
 @media (max-width: 768px) {
