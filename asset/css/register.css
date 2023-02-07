@@ -1,4 +1,81 @@
-input{
-    background-color: red;
+body{
+    background-color: #282B32;
 }
-im
+header{
+
+}
+input {
+    background-color: #F8C44C;
+    border-radius: 8px;
+    padding: 19px;
+    width: 315px;
+    margin: 0px;
+}
+section#register {
+    color: #F9F8F9;
+    padding: 4rem;
+    overflow: hidden;
+}
+input#register_submit {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.title-register {
+    text-align: center;
+}
+.form-register {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+.form-register-div {
+    display: flex;
+    flex-direction: column;
+}
+form#form_register {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.paddbot-register-title {
+    padding-bottom: 2rem;
+}
+.paddbot-register{
+    padding-bottom: 2rem;
+}
+span {
+    padding-top: 1rem;
+}
+header{
+    z-index: 5;
+    position: relative;
+}
+.logo-inscription {
+    width: 120px;
+    margin-inline: auto;
+    padding-bottom: 28px;
+}
+.tache-left{
+    position: absolute;
+    left: -47vw;
+    top: 96vh;
+    transform: rotate(90deg);
+    width: 164rem;
+}
+
+@media (max-width: 768px) {
+    input {
+        width: 100%;
+    }
+    .form-register {
+        display: flex;
+        gap: 4rem;
+        justify-content: center;
+        flex-direction: column;
+        align-self: center;
+    }
+    .paddbot-register-title {
+        padding-bottom: 4rem;
+    }
+}
