@@ -1,9 +1,7 @@
 body{
     background-color: #282B32;
 }
-header{
 
-}
 
 input {
     background-color: #F8C44C;
@@ -44,10 +42,11 @@ form#form_register {
     padding-bottom: 2rem;
 }
 .paddbot-register{
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 span {
     padding-top: 1rem;
+    color:red;
 }
 header{
     z-index: 5;
@@ -76,6 +75,14 @@ header{
 div#page {
     overflow-x: hidden;
 }
+input#register_submit:hover {
+    background-color: #F8C44C;
+    color: black;
+}
+input#register_submit:hover {
+    background-color: #F8C44C;
+    color: black;
+}
 @media (max-width: 768px) {
     .dashicons-menu {
         color: white;
@@ -85,7 +92,7 @@ div#page {
         position: absolute;
         top: 2vh;
         left: 82vw;
-
+    }
     .tache-left{
         display:none;
     }

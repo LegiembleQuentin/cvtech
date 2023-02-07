@@ -1,0 +1,36 @@
+body{
+    background-color: #282B32;
+}
+input {
+    background-color: #F8C44C;
+    border-radius: 8px;
+    padding: 19px;
+    width: 315px;
+    margin: 0px;
+}
+textarea {
+    background-color: #F8C44C;
+    border-radius: 8px;
+    padding: 19px;
+    width: 315px;
+    margin: 0px;
+}
+input#register_submit {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+form#formulaire {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    padding: 4rem 0;
+}
+#title-white{
+    color:white;
+}
+input#register_submit:hover {
+    background-color: #F8C44C;
+    color: black;
+}
