@@ -112,8 +112,7 @@ img {
 }
 .color-white{
 	color:white;
-	font-size: 28px;
-
+	font-size: 12px;
 }
 .padd-two{
 	padding: 2rem;
@@ -121,14 +120,17 @@ img {
 .li-header {
 	padding: 1rem;
 	background: #F8C44C;
+	border: 1px white solid;
 }
 .logo-header {
-	width: 310px;
+	width: 200px;
 }
 
 /*FOOTER*/
 .site-footer{
 	background-color: black;
+	z-index: 5;
+	position: relative;
 }
 .j-content-center{
 	justify-content: center ;
@@ -149,6 +151,7 @@ img {
 	text-align: center;
 }
 
+
 .d-none{
 	display:none;
 }
@@ -166,7 +169,11 @@ img {
 	border-radius:20px;
 	align-self: center;
 }
-
+@media (max-width: 768px) {
+	.ul-footer {
+		gap:3rem;
+	}
+}
 @media only screen and (max-width: 850px) {
 	.d-none{
 		display:block;
@@ -186,6 +193,8 @@ img {
 	#burger-menu.open {
 		display: block;
 		box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+		height: 610px;
+		background-color: #F8C44C;
 
 	}
 
@@ -298,9 +307,9 @@ img {
 	color: white;
 	font-size: 40px;
 	color: white;
-	font-size: 90px;
+	font-size: 50px;
 	position: absolute;
-	top: 5vh;
+	top: 9vh;
 	left: 82vw;
 }
 .dashicons-menu:before {
@@ -308,19 +317,31 @@ img {
 	color: #F8C44C;
 }
 span.dashicons.dashicons-twitter.color-white {
-	font-size: 60px;
+	font-size: 35px;
 }
 span.dashicons.dashicons-linkedin.color-white {
-	font-size: 60px;
+	font-size: 35px;
 }
 span.dashicons.dashicons-facebook.color-white {
-	font-size: 60px;
+	font-size: 35px;
 }
 .gapp-footer-dashicon {
 	gap: 6rem;
 }
+
 .padding-footter {
 	padding: 0 10rem;
 	padding-bottom: 2rem;
 }
 
+.padding-footer{
+	padding: 0 3rem;
+	padding-bottom: 1rem;
+}
+.img-footer{
+	width: 35px;
+}
+header#masthead {
+	padding: 1rem;
+}
+>>>>>>> theo
