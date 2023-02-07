@@ -16,7 +16,7 @@ section#register {
     overflow: hidden;
     position:relative;
 }
-input#register_submit {
+input #register_submit {
     background-color: transparent;
     border: none;
     color: black;
@@ -74,7 +74,7 @@ header{
     width: 154rem;
 }
 
-div#page {
+div #page {
     overflow-x: hidden;
 }
 input#register_submit:hover {
