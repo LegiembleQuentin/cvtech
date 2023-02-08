@@ -273,7 +273,7 @@ img {
 	color: white;
 	font-size: 50px;
 	position: absolute;
-	top: 9vh;
+	top: 0.5vh;
 	left: 82vw;
 }
 .dashicons-menu:before {
