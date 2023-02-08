@@ -12,8 +12,9 @@ textarea {
     background-color: #F8C44C;
     border-radius: 8px;
     padding: 19px;
-    width: 315px;
+    width: 50%;
     margin: 0px;
+    height: 125px;
 }
 input#register_submit {
     background-color: transparent;
@@ -25,8 +26,7 @@ form#formulaire {
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    align-items: center;
-    padding: 4rem 0;
+    padding: 4rem;
 }
 #title-white{
     color:white;
@@ -34,4 +34,10 @@ form#formulaire {
 input#register_submit:hover {
     background-color: white;
     color: black;
+}
+
+@media (max-width: 768px) {
+    textarea {
+        width: 315px;
+    }
 }
