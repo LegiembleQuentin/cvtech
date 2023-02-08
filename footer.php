@@ -12,7 +12,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-        <div >
+        <div class="wrap1">
             <div class="j-content-center space-between d-flex header padding-footer">
                 <div class="logo-header">
                     <img src="<?= asset('/img/logo-CvTech-rogner.png')?>" alt="">

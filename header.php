@@ -23,8 +23,8 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
     <header id="masthead" class="site-header bg-header-black">
+        <div id="page" class="site wrap1">
 
         <div class="wrap3 header">
             <div class="logo-header">
