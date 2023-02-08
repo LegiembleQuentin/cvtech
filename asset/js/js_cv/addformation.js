@@ -36,6 +36,16 @@ btnAddFormation.addEventListener('click', function() {
     newErrorDegreeSpan.classList.add('cv_error');
     newDiv.appendChild(newErrorDegreeSpan);
 
+    let formaCityLabel = createElement('label', '', '', '', '');
+    formaCityLabel.htmlFor = 'forma_city_' + k;
+    formaCityLabel.innerText = ' Lieu ';
+    newDiv.appendChild(formaCityLabel);
+    let newFormaCityInput = createElement('input', 'forma_city_' + k, 'Rouen', 'forma_city_' + k, 'input_forma_city');
+    newDiv.appendChild(newFormaCityInput);
+    let newErrorFormaCitySpan = createElement('span', '', '', 'error_forma_city_' + k, 'error_forma_city');
+    newErrorFormaCitySpan.classList.add('cv_error');
+    newDiv.appendChild(newErrorFormaCitySpan);
+
     let formaStartingDateLabel = createElement('label', '', '', '', '');
     formaStartingDateLabel.htmlFor = 'forma_starting_date_' + k;
     formaStartingDateLabel.innerText = ' Date de début ';
