@@ -102,6 +102,7 @@ function cvtech_scripts() {
         wp_enqueue_script('addskill-js', get_template_directory_uri() . '/asset/js/js_cv/addskill.js', array(), _S_VERSION, true);
         wp_enqueue_script('addexp-js', get_template_directory_uri() . '/asset/js/js_cv/addexp.js', array(), _S_VERSION, true);
         wp_enqueue_script('addformation-js', get_template_directory_uri() . '/asset/js/js_cv/addformation.js', array(), _S_VERSION, true);
+        wp_enqueue_script('form_send-js', get_template_directory_uri() . '/asset/js/js_cv/form_send.js', array(), _S_VERSION, true);
     }
 
 }

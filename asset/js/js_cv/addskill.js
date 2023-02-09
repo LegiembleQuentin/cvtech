@@ -1,6 +1,6 @@
 const btnAddSkill =  document.querySelector('#add_skill_button');
 const skillContainer = document.querySelector('#skill_container');
-let i = 2;
+let i = 1;
 
 
 btnAddSkill.addEventListener('click', function(){
@@ -34,7 +34,6 @@ btnAddSkill.addEventListener('click', function(){
     newDiv.appendChild(xmark);
 
     skillContainer.appendChild(newDiv);
-
 
     i++;
 });

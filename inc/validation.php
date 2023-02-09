@@ -2,6 +2,9 @@
 function cleanXss($key){
     return trim(strip_tags($_POST[$key]));
 }
+function cleanVarXss($var){
+    return trim(strip_tags($var));
+}
 
 function form_error($errors, $key)
 {
@@ -26,6 +29,16 @@ function validationText($errors,$entry,$key,$min,$max){
         }
     }else {
         $errors[$key] = 'Ce champ est obligatoire';
+    }
+    return $errors;
+}
+function validationOptionalText($errors,$entry,$key,$min,$max){
+    if(!empty($entry)){
+        if(mb_strlen($entry) < $min){
+            $errors[$key] = 'Ce champ doit contenir au moins '. $min .' caractères';
+        } elseif(mb_strlen($entry) > $max){
+            $errors[$key] = 'Ce champ ne doit pas contenir plus de '. $max .' caractères';
+        }
     }
     return $errors;
 }
@@ -55,6 +68,16 @@ function validationOptionnalDate($errors, $date, $entry = 'date') {
         $d = DateTime::createFromFormat('Y-m-d', $date);
         if (!$d || $d->format('Y-m-d') !== $date) {
             $errors[$entry] = 'Merci de renseigner une date valide';
+        }
+    }
+    return $errors;
+}
+
+function validationOptionalMonth($errors, $date, $entry = 'date') {
+    if (!empty($date)) {
+        $d = DateTime::createFromFormat('Y-m', $date);
+        if (!$d || $d->format('Y-m') !== $date) {
+            $errors[$entry] = 'Merci de renseigner une date valide au format YYYY-MM';
         }
     }
     return $errors;

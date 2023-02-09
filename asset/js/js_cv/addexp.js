@@ -1,6 +1,7 @@
 const btnAddJob = document.querySelector('#add_job_button');
 const expContainer = document.querySelector('#exp_container');
-let j = 2;
+let j = 1;
+let error
 
 btnAddJob.addEventListener('click', function(){
     let newDiv = document.createElement('div');

@@ -67,7 +67,7 @@ get_header(); ?>
                 </div>
             </div>
             <div class="form-register">
-                <input type="submit" id="register_submit">
+                <input type="submit" id="register_submit" value="S'inscrire">
             </div>
         </form>
 

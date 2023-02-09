@@ -1,6 +1,7 @@
 const btnAddFormation = document.querySelector('#add_formation_button');
 const formationContainer = document.querySelector('#formation_container');
-let k = 2;
+let k = 1;
+
 
 btnAddFormation.addEventListener('click', function() {
     let newDiv = document.createElement('div');

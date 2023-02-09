@@ -124,7 +124,6 @@ form.addEventListener('submit', function (e) {
         errorPassword.innerText = errors['password'];
         errorPhone.innerText = errors['phone'];
         errorBirthdate.innerText = errors['birthdate'];
-        console.log(errors);
     }
 
 })
