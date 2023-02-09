@@ -5,7 +5,7 @@
 
 
 <section id="partners">
-    <div class="wrap3">
+    <div class="wrap">
         <div class="left_partners">
             <div class="title_partners">
                 <h1>Diffusez simplement et gratuitement votre cv</h1>
@@ -19,9 +19,6 @@
             </div>
         </div>
         <div class="right_partners">
-            <div class="tache_top">
-                <img src="<?php echo asset('img/svg/partners/tache_partners.svg'); ?>" alt="tache">
-            </div>
             <div class="txt_logo">
                 <h2>Nos partenaires</h2>
             </div>
@@ -45,4 +42,5 @@
             </div>
         </div>
     </div>
+    <div class="bar"></div>
 </section>
