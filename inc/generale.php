@@ -104,6 +104,7 @@ function cvtech_scripts() {
     if(is_page_template('template-addcv_template1.php')){
         wp_enqueue_script('addskill-js', get_template_directory_uri() . '/asset/js/js_cv/addskill.js', array(), _S_VERSION, true);
         wp_enqueue_script('addexp-js', get_template_directory_uri() . '/asset/js/js_cv/addexp.js', array(), _S_VERSION, true);
+        wp_enqueue_script('addformation-js', get_template_directory_uri() . '/asset/js/js_cv/addformation.js', array(), _S_VERSION, true);
     }
 
 }

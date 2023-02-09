@@ -2,7 +2,7 @@
 /* Template Name: contact */
 
 get_header(); ?>
-    <form method="post" id="formulaire">
+    <form class="wrap1 padding-footer" method="post" id="formulaire">
         <h1 id="title-white">Contactez-nous quand vous voulez !</h1>
         <div class="mail">
             <label for="mail" id="mail"></label>

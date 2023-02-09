@@ -153,6 +153,11 @@ img {
 	.ul-footer {
 		gap:3rem;
 	}
+	.padding-footer {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
 }
 @media only screen and (max-width: 850px) {
 	.d-none{
@@ -289,7 +294,7 @@ img {
 	color: white;
 	font-size: 50px;
 	position: absolute;
-	top: 9vh;
+	top: 11.5vh;
 	left: 82vw;
 }
 .dashicons-menu:before {

@@ -2,12 +2,12 @@
 /* Template Name: Register */
 
 get_header(); ?>
-    <div class="tache-left">
-        <img class="" src="<?= asset('/img/image-bas-register.png')?>" alt="">
-    </div>
-    <div class="tache-right">
-        <img class="" src="<?= asset('/img/right_tache.png')?>" alt="">
-    </div>
+<!--    <div class="tache-left">-->
+<!--        <img class="" src="--><?php //= asset('/img/image-bas-register.png')?><!--" alt="">-->
+<!--    </div>-->
+<!--    <div class="tache-right">-->
+<!--        <img class="" src="--><?php //= asset('/img/right_tache.png')?><!--" alt="">-->
+<!--    </div>-->
 
     <section class="wrap1" id="register">
 
