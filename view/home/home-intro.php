@@ -1,7 +1,5 @@
 <?php
 ?>
-
-
 <section id="intro">
     <div class="wrap3">
         <div class="left" >

@@ -36,7 +36,7 @@
                     <div class="gap d-flex d-block gaptwo ">
                         <li class=" border-twenty"><a class="color-white box-yellow" href="" title="">Design</a></li>
                         <li class=" border-twenty"><a class="color-white box-yellow" href="" title="">Contactez-Nous</a></li>
-                        <li  class="li-header border-twenty" ><a class="color-white box-yellow " href="" title="">Inscription</a></li>
+                        <li  class="li-header border-twenty" ><a class="color-white box-yellow " href="<?php ?>" title="">Inscription</a></li>
                         <li  class="li-header border-twenty" ><a class="color-white box-yellow " href="" title="">Connexion</a></li>
 
                     </div>
