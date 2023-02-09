@@ -937,7 +937,7 @@
         var sliderOffset, arr;
 
         if (type === "init") {
-          slider.viewport = $('<div class="' + namespace + 'viewport"></div>').css({"overflow": "hidden", "position": "relative"}).appendTo(slider).append(slider.container);
+          slider.viewport = $('<div class="' + namespace + 'viewport"></div>').css({ "position": "relative"}).appendTo(slider).append(slider.container);
           // INFINITE LOOP:
           slider.cloneCount = 0;
           slider.cloneOffset = 0;

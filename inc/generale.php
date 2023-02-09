@@ -71,6 +71,9 @@ function cvtech_scripts() {
     if(is_page_template( 'template-cgu.php' )) {
         wp_enqueue_style('cgu-css', get_template_directory_uri() . '/asset/css/cgu.css', array(), _S_VERSION);
     }
+    if(is_page_template( 'template-404.php' )) {
+        wp_enqueue_style('404-css', get_template_directory_uri() . '/asset/css/404.css', array(), _S_VERSION);
+    }
     if(is_page_template('template-register.php')) {
         wp_enqueue_style('register-css', get_template_directory_uri() . '/asset/css/register.css', array(), _S_VERSION);
     }
