@@ -96,3 +96,35 @@ function createElement(element, elName, elPlaceholder, elId, elClass, elType) {
     }
     return newEl;
 }
+
+function updateCVArray (className, array) {
+    let allInputs = document.querySelectorAll(className);
+
+    let id = 0;
+    allInputs.forEach(function(input) {
+        if (!array[id]) {
+            newArray = [];
+            array.push(newArray);
+        }
+        array[id].push(input.value);
+        id++;
+    });
+}
+
+function setErrorMessageForArray(selector, errors) {
+    let allSpanErrors = document.querySelectorAll(selector);
+    let i = 0;
+    allSpanErrors.forEach(function (spanError) {
+        setErrorMessage(spanError, errors[i]);
+        i++;
+    });
+}
+
+function setErrorMessageWithArrayKey(selector, errors, key) {
+    let allSpanErrors = document.querySelectorAll(selector);
+    let i = 0;
+    allSpanErrors.forEach(function (spanError) {
+        setErrorMessage(spanError, errors[i][key]);
+        i++;
+    });
+}
