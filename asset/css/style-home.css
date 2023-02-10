@@ -29,6 +29,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     box-sizing: border-box;
 }
 
+.wrap4{
+    max-width: 1450px;
+    width:100%;
+    margin: 0 auto
+}
 
 
 html{
@@ -104,6 +109,1123 @@ img{
 #intro .left .link_intro a:hover{
     background-color: black;
     color: white;
+}
+#intro .wave, #design .wave {
+    padding: 14.5rem 0;
+}
+
+#intro .wave  img{
+       width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+    #intro .wave, #design .wave {
+        padding: 17.5rem 0;
+    }
+
+
+}
+
+@media screen and (max-width: 980px) {
+    #intro .wave, #design .wave {
+        padding: 19.5rem 0;
+    }
+}
+
+
+
+@media screen and (max-width: 929px) {
+    #intro .wave, #design .wave {
+        padding: 19.5rem 0;
+    }
+}
+
+
+@media screen and (max-width: 849px) {
+    #intro {
+        background: url("../img/background_home_responsive.jpg")center / cover no-repeat;
+    }
+}
+
+
+
+@media screen and (max-width: 838px) {
+    #intro .wave, #design .wave {
+        padding: 17.7rem 0;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    #intro .wave, #design .wave {
+        padding: 15.9rem 0;
+    }
+}
+
+
+
+@media screen and (max-width: 698px) {
+    #intro .wave, #design .wave {
+        padding: 16.9rem 0;
+    }
+}
+
+
+@media screen and (max-width: 625px) {
+    #intro .wave, #design .wave {
+        padding: 28.8rem 0;
+    }
+    #intro .left {
+        padding: 0;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width:  600px) {
+    #intro .wave, #design .wave {
+        padding: 28.8rem 0;
+    }
+    #intro .left {
+        padding: 0;
+         width: 100%;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width:  575px) {
+    #intro .wave, #design .wave {
+        padding: 28.8rem 0;
+    }
+    #intro .left {
+        padding: 0;
+        width: 100%;
+        align-items: center;
+    }
+    #intro .txt_intro h1 {
+        font-size: 10rem;
+    }
+
+}
+
+
+@media screen and (max-width:  557px) {
+    #intro .wave, #design .wave {
+        padding: 29.9rem 0;
+    }
+    #intro .txt_intro h1 {
+        font-size: 9rem;
+    }
+}
+
+@media screen and (max-width:  537px) {
+    #intro .wave, #design .wave {
+        padding: 29.9rem 0;
+    }
+
+}
+
+@media screen and (max-width:  509px) {
+    #intro .wave, #design .wave {
+        padding: 29.9rem 0;
+    }
+    #intro .txt_intro h1 {
+        font-size: 9rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #intro .wave, #design .wave {
+        padding: 28rem 0;
+    }
+
+}
+
+
+
+@media screen and (max-width: 444px){
+    #intro .wave, #design .wave {
+        padding: 29.7rem 0;
+    }
+    #intro .txt_intro h1 {
+        font-size: 8rem;
+    }
+}
+
+
+
+@media screen and (max-width: 419px){
+    #intro .wave, #design .wave {
+        padding: 30.7rem 0;
+    }
+    #intro .txt_intro h1 {
+        font-size: 7rem;
+    }
+}
+
+@media screen and (max-width: 408px){
+    #intro .wave, #design .wave {
+        padding: 31.7rem 0;
+    }
+}
+
+@media screen and (max-width: 380px){
+    #intro .wave, #design .wave {
+        padding: 30.7rem 0;
+    }
+    #intro .txt_intro h1 {
+        font-size: 6rem;
+    }
+}
+
+
+@media screen and (max-width: 375px){
+    #intro .wave, #design .wave {
+        padding: 31.7rem 0;
+    }
+
+}
+
+@media screen and (max-width: 360px){
+    #intro .wave, #design .wave {
+        padding: 28.7rem 0;
+    }
+
+}
+
+@media screen and (max-width: 329px){
+    #intro .wave, #design .wave {
+        padding: 27.9rem 0;
+    }
+
+}
+
+
+@media screen and (max-width: 319px){
+    #intro .wave, #design .wave {
+        padding: 27.9rem 0;
+    }
+
+}
+
+@media screen and (max-width: 310px) {
+    #intro .wave, #design .wave {
+        padding: 25.9rem 0;
+    }
+
+}
+
+@media screen and (max-width: 272px) {
+    #intro .wave, #design .wave {
+        padding: 23.9rem 0;
+    }
+}
+
+
+/*
+PARTENERS*/
+
+
+
+#partners .wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+#partners .wrap .left_partners{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 127%;
+}
+
+#partners .wrap  .left_partners .title_partners h1{
+    font-size: 5rem;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+#partners .wrap  .left_partners .txt_partners {
+    display: flex;
+    gap: 2rem;
+}
+
+#partners .wrap  .left_partners .txt_partners p{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif
+}
+
+#partners .wrap  .left_partners .txt_partners img{
+    width: 8%;
+}
+
+
+#partners .wrap  .left_partners .link_partners a{
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8C44C;
+    padding: .5rem 1.7rem;
+    border-radius: 24px;
+    color: black;
+    text-transform: uppercase;
+    transition: .4s all;
+}
+
+
+#partners .wrap  .left_partners .link_partners a:hover{
+    background-color: black;
+    color: #F8C44C;
+    text-transform: uppercase;
+}
+
+
+#partners .wrap  .right_partners{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+    align-items: center;
+}
+
+#partners .wrap .right_partners .txt_logo, .para p{
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#partners .wrap .right_partners .logo_partners1, .logo_partners2, .logo_partners3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#partners .wrap  .right_partners .logo_part{
+    width: 18%;
+}
+
+
+#partners .wrap .right_partners .tache_top{
+    position: absolute;
+    width: 60%;
+    top: 101vh;
+    z-index: -1;
+}
+
+
+
+/*DESIGN*/
+
+#design{
+    padding-top: 1rem;
+}
+
+#design h1{
+    font-size: 4rem;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    padding: 3rem;
+}
+#design .gestionflex {
+    width: 50%;
+    padding: 2rem 0;
+    position: relative;
+    border: none;
+}
+
+#design .slides{
+    display: flex;
+    gap: 1rem;
+}
+
+#design .slides li img{
+    transition: .4s all;
+}
+
+#design .slides li img:hover{
+    transform: scale(1.4);
+}
+
+#design #diapoow3{
+    overflow: inherit;
+}
+#design .text_slider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: auto;
+    left: auto;
+    font-size: 50px;
+    font-weight: bold;
+    color: #f99e1a;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+
+#design .link{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#design .link a{
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8C44C;
+    padding: .5rem 1.7rem;
+    border-radius: 24px;
+    color: black;
+    text-transform: uppercase;
+    transition: .4s all;
+}
+
+#design .link a:hover{
+    background-color: black;
+    color: #F8C44C;
+    text-transform: uppercase;
+}
+
+
+
+/*
+CONSEIL*/
+
+#conseil {
+    background-color: #F8C44C;
+    padding-bottom: 3rem;
+}
+
+
+#conseil .wave{
+    transform: rotate(180deg);
+}
+
+#conseil .wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#conseil h1{
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    padding-bottom: 3rem;
+}
+
+
+#conseil .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#conseil .card .carte{
+    display: flex;
+    flex-direction: column;
+    background-color: #282B32;
+    align-items: center;
+    width: 25%;
+
+}
+
+#conseil .card .carte .logo_img1{
+    width: 20%;
+}
+
+#conseil .card .carte .logo_img2{
+    width: 15%;
+}
+
+#conseil .card .carte .logo_img3 {
+    width: 20%;
+}
+
+
+#conseil .card .carte .txt_card{
+ text-align: center;
+}/*!
+Theme Name: cvtech
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cvtech
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+cvtech is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+img{
+    width: 100%;
+}
+/*
+.wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}*/
+
+/*INTRO*/
+
+.wrap3 {max-width: 1300px; width:100%;margin: 0 auto}
+
+
+#intro {
+    background: url("../img/background_home.jpg")center / cover no-repeat;
+    height: 875px;
+    padding-top: 10rem;
+ }
+
+#intro .left{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    padding: 2.8rem 3rem;
+    width: 66%;
+}
+
+#intro .txt_intro h1{
+    font-size: 11rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+#intro .para {
+    display: block;
+    /*
+    box-shadow: -7px 12px 40px 5px black;
+    */
+    padding: 2rem;
+}
+
+#intro .para p{
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+#intro .left .link_intro a{
+    color: black;
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    padding: 1rem 1.7rem;
+    border-radius: 24px;
+    transition: .4s all;
+    text-transform: uppercase;
+}
+
+
+#intro .left .link_intro a:hover{
+    background-color: black;
+    color: white;
+}
+#intro .wave, #design .wave {
+    padding: 14.5rem 0;
+}
+
+#intro .wave  img{
+       width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+    #intro .wave, #design .wave {
+        padding: 17.5rem 0;
+    }
+
+
+}
+
+@media screen and (max-width: 980px) {
+    #intro .wave, #design .wave {
+        padding: 19.5rem 0;
+    }
+}
+
+
+
+@media screen and (max-width: 929px) {
+    #intro .wave, #design .wave {
+        padding: 19.5rem 0;
+    }
+}
+
+
+@media screen and (max-width: 849px) {
+    #intro {
+        background: url("../img/background_home_responsive.jpg")center / cover no-repeat;
+    }
+}
+
+
+
+@media screen and (max-width: 838px) {
+    #intro .wave, #design .wave {
+        padding: 17.7rem 0;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    #intro .wave, #design .wave {
+        padding: 15.9rem 0;
+    }
+}
+
+
+
+@media screen and (max-width: 698px) {
+    #intro .wave, #design .wave {
+        padding: 16.9rem 0;
+    }
+}
+
+
+@media screen and (max-width: 625px) {
+    #intro .wave, #design .wave {
+        padding: 28.8rem 0;
+    }
+    #intro .left {
+        padding: 0;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width:  600px) {
+    #intro .wave, #design .wave {
+        padding: 28.8rem 0;
+    }
+    #intro .left {
+        padding: 0;
+         width: 100%;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width:  575px) {
+    #intro .wave, #design .wave {
+        padding: 28.8rem 0;
+    }
+    #intro .left {
+        padding: 0;
+        width: 100%;
+        align-items: center;
+    }
+    #intro .txt_intro h1 {
+        font-size: 10rem;
+    }
+
+}
+
+
+@media screen and (max-width:  557px) {
+    #intro .wave, #design .wave {
+        padding: 29.9rem 0;
+    }
+    #intro .txt_intro h1 {
+        font-size: 9rem;
+    }
+}
+
+@media screen and (max-width:  537px) {
+    #intro .wave, #design .wave {
+        padding: 29.9rem 0;
+    }
+
+}
+
+@media screen and (max-width:  509px) {
+    #intro .wave, #design .wave {
+        padding: 29.9rem 0;
+    }
+    #intro .txt_intro h1 {
+        font-size: 9rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #intro .wave, #design .wave {
+        padding: 28rem 0;
+    }
+
+}
+
+
+
+@media screen and (max-width: 444px){
+    #intro .wave, #design .wave {
+        padding: 29.7rem 0;
+    }
+    #intro .txt_intro h1 {
+        font-size: 8rem;
+    }
+}
+
+
+
+@media screen and (max-width: 419px){
+    #intro .wave, #design .wave {
+        padding: 30.7rem 0;
+    }
+    #intro .txt_intro h1 {
+        font-size: 7rem;
+    }
+}
+
+@media screen and (max-width: 408px){
+    #intro .wave, #design .wave {
+        padding: 31.7rem 0;
+    }
+}
+
+@media screen and (max-width: 380px){
+    #intro .wave, #design .wave {
+        padding: 30.7rem 0;
+    }
+    #intro .txt_intro h1 {
+        font-size: 6rem;
+    }
+}
+
+
+@media screen and (max-width: 375px){
+    #intro .wave, #design .wave {
+        padding: 31.7rem 0;
+    }
+
+}
+
+@media screen and (max-width: 360px){
+    #intro .wave, #design .wave {
+        padding: 28.7rem 0;
+    }
+
+}
+
+@media screen and (max-width: 329px){
+    #intro .wave, #design .wave {
+        padding: 27.9rem 0;
+    }
+
+}
+
+
+@media screen and (max-width: 319px){
+    #intro .wave, #design .wave {
+        padding: 27.9rem 0;
+    }
+
+}
+
+@media screen and (max-width: 310px) {
+    #intro .wave, #design .wave {
+        padding: 25.9rem 0;
+    }
+
+}
+
+@media screen and (max-width: 272px) {
+    #intro .wave, #design .wave {
+        padding: 23.9rem 0;
+    }
+}
+
+
+/*
+PARTENERS*/
+
+
+#partners{
+    padding-bottom: 5rem;
+}
+
+#partners .wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+#partners .left_partners{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 50%;
+}
+
+#partners .left_partners .title_partners h1{
+    font-size: 5rem;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+#partners .left_partners .txt_partners {
+    display: flex;
+    gap: 2rem;
+}
+
+#partners .left_partners .txt_partners p{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif
+}
+
+#partners .left_partners .txt_partners img{
+    width: 10%;
+}
+
+
+#partners .left_partners .link_partners a{
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8C44C;
+    padding: .5rem 1.7rem;
+    border-radius: 24px;
+    color: black;
+    text-transform: uppercase;
+    transition: .4s all;
+}
+
+
+#partners .left_partners .link_partners a:hover{
+    background-color: black;
+    color: #F8C44C;
+    text-transform: uppercase;
+}
+
+
+#partners .right_partners{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+    align-items: center;
+}
+
+#partners .right_partners .txt_logo, .para p{
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#partners .right_partners .logo_partners1, .logo_partners2, .logo_partners3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#partners .right_partners .logo_part{
+    width: 18%;
+}
+
+
+#partners .right_partners .tache_top{
+    position: absolute;
+    width: 60%;
+    top: 101vh;
+    z-index: -1;
+}
+
+
+
+/*DESIGN*/
+
+#design{
+    padding-top: 1rem;
+}
+
+#design h1{
+    font-size: 4rem;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    padding: 3rem;
+}
+#design .gestionflex {
+    width: 50%;
+    padding: 2rem 0;
+    position: relative;
+    border: none;
+}
+
+#design .slides{
+    display: flex;
+    gap: 1rem;
+}
+
+#design .slides li img{
+    transition: .4s all;
+}
+
+#design .slides li img:hover{
+    transform: scale(1.4);
+}
+
+#design #diapoow3{
+    overflow: inherit;
+}
+#design .text_slider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: auto;
+    left: auto;
+    font-size: 50px;
+    font-weight: bold;
+    color: #f99e1a;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+
+#design .link{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#design .link a{
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F8C44C;
+    padding: .5rem 1.7rem;
+    border-radius: 24px;
+    color: black;
+    text-transform: uppercase;
+    transition: .4s all;
+}
+
+#design .link a:hover{
+    background-color: black;
+    color: #F8C44C;
+    text-transform: uppercase;
+}
+
+
+
+/*
+CONSEIL*/
+
+#conseil {
+    background-color: #F8C44C;
+    padding-bottom: 3rem;
+}
+
+
+#conseil .wave{
+    transform: rotate(180deg);
+}
+
+#conseil .wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#conseil h1{
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    padding-bottom: 3rem;
+}
+
+
+#conseil .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#conseil .card .carte{
+    display: flex;
+    flex-direction: column;
+    background-color: #282B32;
+    align-items: center;
+    width: 25%;
+
+}
+
+#conseil .card .carte .logo_img1{
+    width: 20%;
+}
+
+#conseil .card .carte .logo_img2{
+    width: 15%;
+}
+
+#conseil .card .carte .logo_img3 {
+    width: 20%;
+}
+
+
+#conseil .card .carte .txt_card{
+ text-align: center;
+}/*!
+Theme Name: cvtech
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cvtech
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+cvtech is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+img{
+    width: 100%;
+}
+/*
+.wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}*/
+
+/*INTRO*/
+
+.wrap3 {max-width: 1300px; width:100%;margin: 0 auto}
+
+
+#intro {
+    background: url("../img/background_home.jpg")center / cover no-repeat;
+    height: 875px;
+    padding-top: 10rem;
+ }
+
+#intro .left{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    padding: 2.8rem 3rem;
+    width: 66%;
+}
+
+#intro .txt_intro h1{
+    font-size: 11rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+#intro .para {
+    display: block;
+    /*
+    box-shadow: -7px 12px 40px 5px black;
+    */
+    padding: 2rem;
+}
+
+#intro .para p{
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+#intro .left .link_intro a{
+    color: black;
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    padding: 1rem 1.7rem;
+    border-radius: 24px;
+    transition: .4s all;
+    text-transform: uppercase;
+}
+
+
+#intro .left .link_intro a:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0px 7px 15px rgb(0 0 0 / 20%);
 }
 #intro .wave, #design .wave {
     padding: 14.5rem 0;
@@ -1790,1131 +2912,14 @@ img{
        width: 100%;
 }
 
-@media screen and (max-width: 1400px) {
-    #intro .wave, #design .wave {
-        padding: 17.5rem 0;
-    }
 
-
-}
-
-@media screen and (max-width: 980px) {
-    #intro .wave, #design .wave {
-        padding: 19.5rem 0;
-    }
-}
-
-
-
-@media screen and (max-width: 929px) {
-    #intro .wave, #design .wave {
-        padding: 19.5rem 0;
-    }
-}
-
-
-@media screen and (max-width: 849px) {
-    #intro {
-        background: url("../img/background_home_responsive.jpg")center / cover no-repeat;
-    }
-}
-
-
-
-@media screen and (max-width: 838px) {
-    #intro .wave, #design .wave {
-        padding: 17.7rem 0;
-    }
-}
-
-@media screen and (max-width: 775px) {
-    #intro .wave, #design .wave {
-        padding: 15.9rem 0;
-    }
-}
-
-
-
-@media screen and (max-width: 698px) {
-    #intro .wave, #design .wave {
-        padding: 16.9rem 0;
-    }
-}
-
-
-@media screen and (max-width: 625px) {
-    #intro .wave, #design .wave {
-        padding: 28.8rem 0;
-    }
-    #intro .left {
-        padding: 0;
-        width: 100%;
-        align-items: center;
-    }
-}
-
-
-@media screen and (max-width:  600px) {
-    #intro .wave, #design .wave {
-        padding: 28.8rem 0;
-    }
-    #intro .left {
-        padding: 0;
-         width: 100%;
-        align-items: center;
-    }
-}
-
-
-@media screen and (max-width:  575px) {
-    #intro .wave, #design .wave {
-        padding: 28.8rem 0;
-    }
-    #intro .left {
-        padding: 0;
-        width: 100%;
-        align-items: center;
-    }
-    #intro .txt_intro h1 {
-        font-size: 10rem;
-    }
-
-}
-
-
-@media screen and (max-width:  557px) {
-    #intro .wave, #design .wave {
-        padding: 29.9rem 0;
-    }
-    #intro .txt_intro h1 {
-        font-size: 9rem;
-    }
-}
-
-@media screen and (max-width:  537px) {
-    #intro .wave, #design .wave {
-        padding: 29.9rem 0;
-    }
-
-}
-
-@media screen and (max-width:  509px) {
-    #intro .wave, #design .wave {
-        padding: 29.9rem 0;
-    }
-    #intro .txt_intro h1 {
-        font-size: 9rem;
-    }
-}
-
-@media screen and (max-width: 480px){
-    #intro .wave, #design .wave {
-        padding: 28rem 0;
-    }
-
-}
-
-
-
-@media screen and (max-width: 444px){
-    #intro .wave, #design .wave {
-        padding: 29.7rem 0;
-    }
-    #intro .txt_intro h1 {
-        font-size: 8rem;
-    }
-}
-
-
-
-@media screen and (max-width: 419px){
-    #intro .wave, #design .wave {
-        padding: 30.7rem 0;
-    }
-    #intro .txt_intro h1 {
-        font-size: 7rem;
-    }
-}
-
-@media screen and (max-width: 408px){
-    #intro .wave, #design .wave {
-        padding: 31.7rem 0;
-    }
-}
-
-@media screen and (max-width: 380px){
-    #intro .wave, #design .wave {
-        padding: 30.7rem 0;
-    }
-    #intro .txt_intro h1 {
-        font-size: 6rem;
-    }
-}
-
-
-@media screen and (max-width: 375px){
-    #intro .wave, #design .wave {
-        padding: 31.7rem 0;
-    }
-
-}
-
-@media screen and (max-width: 360px){
-    #intro .wave, #design .wave {
-        padding: 28.7rem 0;
-    }
-
-}
-
-@media screen and (max-width: 329px){
-    #intro .wave, #design .wave {
-        padding: 27.9rem 0;
-    }
-
-}
-
-
-@media screen and (max-width: 319px){
-    #intro .wave, #design .wave {
-        padding: 27.9rem 0;
-    }
-
-}
-
-@media screen and (max-width: 310px) {
-    #intro .wave, #design .wave {
-        padding: 25.9rem 0;
-    }
-
-}
-
-@media screen and (max-width: 272px) {
-    #intro .wave, #design .wave {
-        padding: 23.9rem 0;
-    }
-}
-
-
-/*
-PARTENERS*/
-
-
-#partners{
-    padding-bottom: 5rem;
-}
-
-#partners .wrap{
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    align-items: center;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-}
-
-#partners .left_partners{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    width: 50%;
-}
-
-#partners .left_partners .title_partners h1{
-    font-size: 5rem;
-    color: black;
-    text-transform: uppercase;
-    font-family: 'Archivo Black', sans-serif;
-}
-
-#partners .left_partners .txt_partners {
-    display: flex;
-    gap: 2rem;
-}
-
-#partners .left_partners .txt_partners p{
-    font-size: 2rem;
-    font-family: 'Poppins', sans-serif
-}
-
-#partners .left_partners .txt_partners img{
-    width: 10%;
-}
-
-
-#partners .left_partners .link_partners a{
-    font-size: 1.8rem;
-    font-family: 'Poppins', sans-serif;
-    background-color: #F8C44C;
-    padding: .5rem 1.7rem;
-    border-radius: 24px;
-    color: black;
-    text-transform: uppercase;
-    transition: .4s all;
-}
-
-
-#partners .left_partners .link_partners a:hover{
-    background-color: black;
-    color: #F8C44C;
-    text-transform: uppercase;
-}
-
-
-#partners .right_partners{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 50%;
-    align-items: center;
-}
-
-#partners .right_partners .txt_logo, .para p{
-    font-size: 1.8rem;
-    font-family: 'Poppins', sans-serif;
-}
-
-#partners .right_partners .logo_partners1, .logo_partners2, .logo_partners3{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-#partners .right_partners .logo_part{
-    width: 18%;
-}
-
-
-#partners .right_partners .tache_top{
-    position: absolute;
-    width: 60%;
-    top: 101vh;
-    z-index: -1;
-}
-
-
-
-/*DESIGN*/
-
-#design{
-    padding-top: 1rem;
-}
-
-#design h1{
-    font-size: 4rem;
-    color: black;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Archivo Black', sans-serif;
-    padding: 3rem;
-}
-#design .gestionflex {
-    width: 50%;
-    padding: 2rem 0;
-    position: relative;
-    border: none;
-}
-
-#design .slides{
-    display: flex;
-    gap: 1rem;
-}
-
-#design .slides li img{
-    transition: .4s all;
-}
-
-#design .slides li img:hover{
-    transform: scale(1.4);
-}
-
-#design #diapoow3{
-    overflow: inherit;
-}
-#design .text_slider {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: auto;
-    left: auto;
-    font-size: 50px;
-    font-weight: bold;
-    color: #f99e1a;
-    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
-    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
-}
-
-#design .link{
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-}
-
-#design .link a{
-    font-size: 1.8rem;
-    font-family: 'Poppins', sans-serif;
-    background-color: #F8C44C;
-    padding: .5rem 1.7rem;
-    border-radius: 24px;
-    color: black;
-    text-transform: uppercase;
-    transition: .4s all;
-}
-
-#design .link a:hover{
-    background-color: black;
-    color: #F8C44C;
-    text-transform: uppercase;
-}
-
-
-
-/*
-CONSEIL*/
-
-#conseil {
-    background-color: #F8C44C;
-    padding-bottom: 3rem;
-}
-
-
-#conseil .wave{
-    transform: rotate(180deg);
-}
-
-#conseil .wrap{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#conseil h1{
-    font-size: 4rem;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Archivo Black', sans-serif;
-    padding-bottom: 3rem;
-}
-
-
-#conseil .card{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#conseil .card .carte{
-    display: flex;
-    flex-direction: column;
-    background-color: #282B32;
-    align-items: center;
-    width: 25%;
-
-}
-
-#conseil .card .carte .logo_img1{
-    width: 20%;
-}
-
-#conseil .card .carte .logo_img2{
-    width: 15%;
-}
-
-#conseil .card .carte .logo_img3 {
-    width: 20%;
-}
-
-
-#conseil .card .carte .txt_card{
- text-align: center;
-}/*!
-Theme Name: cvtech
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
-Version: 1.0.0
-Tested up to: 5.4
-Requires PHP: 5.6
-License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: cvtech
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned.
-
-cvtech is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
-*/
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
-html{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-
-img{
-    width: 100%;
-}
-/*
-.wrap {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}*/
-
-/*INTRO*/
-
-.wrap3 {max-width: 1300px; width:100%;margin: 0 auto}
-
-
-#intro {
-    background: url("../img/background_home.jpg")center / cover no-repeat;
-    height: 875px;
-    padding-top: 10rem;
- }
-
-#intro .left{
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
-    padding: 2.8rem 3rem;
-    width: 66%;
-}
-
-#intro .txt_intro h1{
-    font-size: 11rem;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-family: 'Archivo Black', sans-serif;
-}
-
-#intro .para {
-    display: block;
-    /*
-    box-shadow: -7px 12px 40px 5px black;
-    */
-    padding: 2rem;
-}
-
-#intro .para p{
-    color: #FFFFFF;
-    font-size: 2rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-}
-
-#intro .left .link_intro a{
-    color: black;
-    font-size: 1.8rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    background-color: #FFFFFF;
-    padding: 1rem 1.7rem;
-    border-radius: 24px;
-    transition: .4s all;
-    text-transform: uppercase;
-}
-
-
-#intro .left .link_intro a:hover{
-    background-color: black;
-    color: white;
-}
-#intro .wave, #design .wave {
-    padding: 14.5rem 0;
-}
-
-#intro .wave  img{
-       width: 100%;
-}
 
 @media screen and (max-width: 1400px) {
     #intro .wave, #design .wave {
         padding: 17.5rem 0;
     }
-
-
-}
-
-@media screen and (max-width: 980px) {
-    #intro .wave, #design .wave {
-        padding: 19.5rem 0;
-    }
-}
-
-
-
-@media screen and (max-width: 929px) {
-    #intro .wave, #design .wave {
-        padding: 19.5rem 0;
-    }
-}
-
-
-@media screen and (max-width: 849px) {
-    #intro {
-        background: url("../img/background_home_responsive.jpg")center / cover no-repeat;
-    }
-}
-
-
-
-@media screen and (max-width: 838px) {
-    #intro .wave, #design .wave {
-        padding: 17.7rem 0;
-    }
-}
-
-@media screen and (max-width: 775px) {
-    #intro .wave, #design .wave {
-        padding: 15.9rem 0;
-    }
-}
-
-
-
-@media screen and (max-width: 698px) {
-    #intro .wave, #design .wave {
-        padding: 16.9rem 0;
-    }
-}
-
-
-@media screen and (max-width: 625px) {
-    #intro .wave, #design .wave {
-        padding: 28.8rem 0;
-    }
-    #intro .left {
-        padding: 0;
-        width: 100%;
-        align-items: center;
-    }
-}
-
-
-@media screen and (max-width:  600px) {
-    #intro .wave, #design .wave {
-        padding: 28.8rem 0;
-    }
-    #intro .left {
-        padding: 0;
-         width: 100%;
-        align-items: center;
-    }
-}
-
-
-@media screen and (max-width:  575px) {
-    #intro .wave, #design .wave {
-        padding: 28.8rem 0;
-    }
-    #intro .left {
-        padding: 0;
-        width: 100%;
-        align-items: center;
-    }
-    #intro .txt_intro h1 {
-        font-size: 10rem;
-    }
-
-}
-
-
-@media screen and (max-width:  557px) {
-    #intro .wave, #design .wave {
-        padding: 29.9rem 0;
-    }
-    #intro .txt_intro h1 {
-        font-size: 9rem;
-    }
-}
-
-@media screen and (max-width:  537px) {
-    #intro .wave, #design .wave {
-        padding: 29.9rem 0;
-    }
-
-}
-
-@media screen and (max-width:  509px) {
-    #intro .wave, #design .wave {
-        padding: 29.9rem 0;
-    }
-    #intro .txt_intro h1 {
-        font-size: 9rem;
-    }
-}
-
-@media screen and (max-width: 480px){
-    #intro .wave, #design .wave {
-        padding: 28rem 0;
-    }
-
-}
-
-
-
-@media screen and (max-width: 444px){
-    #intro .wave, #design .wave {
-        padding: 29.7rem 0;
-    }
-    #intro .txt_intro h1 {
-        font-size: 8rem;
-    }
-}
-
-
-
-@media screen and (max-width: 419px){
-    #intro .wave, #design .wave {
-        padding: 30.7rem 0;
-    }
-    #intro .txt_intro h1 {
-        font-size: 7rem;
-    }
-}
-
-@media screen and (max-width: 408px){
-    #intro .wave, #design .wave {
-        padding: 31.7rem 0;
-    }
-}
-
-@media screen and (max-width: 380px){
-    #intro .wave, #design .wave {
-        padding: 30.7rem 0;
-    }
-    #intro .txt_intro h1 {
-        font-size: 6rem;
-    }
-}
-
-
-@media screen and (max-width: 375px){
-    #intro .wave, #design .wave {
-        padding: 31.7rem 0;
-    }
-
-}
-
-@media screen and (max-width: 360px){
-    #intro .wave, #design .wave {
-        padding: 28.7rem 0;
-    }
-
-}
-
-@media screen and (max-width: 329px){
-    #intro .wave, #design .wave {
-        padding: 27.9rem 0;
-    }
-
-}
-
-
-@media screen and (max-width: 319px){
-    #intro .wave, #design .wave {
-        padding: 27.9rem 0;
-    }
-
-}
-
-@media screen and (max-width: 310px) {
-    #intro .wave, #design .wave {
-        padding: 25.9rem 0;
-    }
-
-}
-
-@media screen and (max-width: 272px) {
-    #intro .wave, #design .wave {
-        padding: 23.9rem 0;
-    }
-}
-
-
-/*
-PARTENERS*/
-
-
-#partners{
-    padding-bottom: 5rem;
-}
-
-#partners .wrap{
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    align-items: center;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-}
-
-#partners .left_partners{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    width: 50%;
-}
-
-#partners .left_partners .title_partners h1{
-    font-size: 5rem;
-    color: black;
-    text-transform: uppercase;
-    font-family: 'Archivo Black', sans-serif;
-}
-
-#partners .left_partners .txt_partners {
-    display: flex;
-    gap: 2rem;
-}
-
-#partners .left_partners .txt_partners p{
-    font-size: 2rem;
-    font-family: 'Poppins', sans-serif
-}
-
-#partners .left_partners .txt_partners img{
-    width: 10%;
-}
-
-
-#partners .left_partners .link_partners a{
-    font-size: 1.8rem;
-    font-family: 'Poppins', sans-serif;
-    background-color: #F8C44C;
-    padding: .5rem 1.7rem;
-    border-radius: 24px;
-    color: black;
-    text-transform: uppercase;
-    transition: .4s all;
-}
-
-
-#partners .left_partners .link_partners a:hover{
-    background-color: black;
-    color: #F8C44C;
-    text-transform: uppercase;
 }
 
-
-#partners .right_partners{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 50%;
-    align-items: center;
-}
-
-#partners .right_partners .txt_logo, .para p{
-    font-size: 1.8rem;
-    font-family: 'Poppins', sans-serif;
-}
-
-#partners .right_partners .logo_partners1, .logo_partners2, .logo_partners3{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-#partners .right_partners .logo_part{
-    width: 18%;
-}
-
-
-#partners .right_partners .tache_top{
-    position: absolute;
-    width: 60%;
-    top: 101vh;
-    z-index: -1;
-}
-
-
-
-/*DESIGN*/
-
-#design{
-    padding-top: 1rem;
-}
-
-#design h1{
-    font-size: 4rem;
-    color: black;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Archivo Black', sans-serif;
-    padding: 3rem;
-}
-#design .gestionflex {
-    width: 50%;
-    padding: 2rem 0;
-    position: relative;
-    border: none;
-}
-
-#design .slides{
-    display: flex;
-    gap: 1rem;
-}
-
-#design .slides li img{
-    transition: .4s all;
-}
-
-#design .slides li img:hover{
-    transform: scale(1.4);
-}
-
-#design #diapoow3{
-    overflow: inherit;
-}
-#design .text_slider {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: auto;
-    left: auto;
-    font-size: 50px;
-    font-weight: bold;
-    color: #f99e1a;
-    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
-    1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
-}
-
-#design .link{
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-}
-
-#design .link a{
-    font-size: 1.8rem;
-    font-family: 'Poppins', sans-serif;
-    background-color: #F8C44C;
-    padding: .5rem 1.7rem;
-    border-radius: 24px;
-    color: black;
-    text-transform: uppercase;
-    transition: .4s all;
-}
-
-#design .link a:hover{
-    background-color: black;
-    color: #F8C44C;
-    text-transform: uppercase;
-}
-
-
-
-/*
-CONSEIL*/
-
-#conseil {
-    background-color: #F8C44C;
-    padding-bottom: 3rem;
-}
-
-
-#conseil .wave{
-    transform: rotate(180deg);
-}
-
-#conseil .wrap{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#conseil h1{
-    font-size: 4rem;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Archivo Black', sans-serif;
-    padding-bottom: 3rem;
-}
-
-
-#conseil .card{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#conseil .card .carte{
-    display: flex;
-    flex-direction: column;
-    background-color: #282B32;
-    align-items: center;
-    width: 25%;
-
-}
-
-#conseil .card .carte .logo_img1{
-    width: 20%;
-}
-
-#conseil .card .carte .logo_img2{
-    width: 15%;
-}
-
-#conseil .card .carte .logo_img3 {
-    width: 20%;
-}
-
-
-#conseil .card .carte .txt_card{
- text-align: center;
-}/*!
-Theme Name: cvtech
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
-Version: 1.0.0
-Tested up to: 5.4
-Requires PHP: 5.6
-License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: cvtech
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned.
-
-cvtech is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
-*/
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
-html{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-
-img{
-    width: 100%;
-}
-/*
-.wrap {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}*/
-
-/*INTRO*/
-
-.wrap3 {max-width: 1300px; width:100%;margin: 0 auto}
-
-
-#intro {
-    background: url("../img/background_home.jpg")center / cover no-repeat;
-    height: 875px;
-    padding-top: 10rem;
- }
-
-#intro .left{
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
-    padding: 2.8rem 3rem;
-    width: 66%;
-}
-
-#intro .txt_intro h1{
-    font-size: 11rem;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-family: 'Archivo Black', sans-serif;
-}
-
-#intro .para {
-    display: block;
-    /*
-    box-shadow: -7px 12px 40px 5px black;
-    */
-    padding: 2rem;
-}
-
-#intro .para p{
-    color: #FFFFFF;
-    font-size: 2rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-}
-
-#intro .left .link_intro a{
-    color: black;
-    font-size: 1.8rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    background-color: #FFFFFF;
-    padding: 1rem 1.7rem;
-    border-radius: 24px;
-    transition: .4s all;
-    text-transform: uppercase;
-}
-
-
-#intro .left .link_intro a:hover{
-    background-color: black;
-    color: white;
-}
-#intro .wave, #design .wave {
-    padding: 14.5rem 0;
-}
-
-#intro .wave  img{
-       width: 100%;
-}
-
-@media screen and (max-width: 1400px) {
-    #intro .wave, #design .wave {
-        padding: 17.5rem 0;
-    }
-
-
-}
 
 @media screen and (max-width: 980px) {
     #intro .wave, #design .wave {
@@ -3217,6 +3222,48 @@ PARTENERS*/
 }
 
 
+@media screen and (max-width: 1192px){
+    #partners .wrap {
+            flex-direction: column;
+            gap: 4rem;
+    }
+    #partners .wrap .left_partners {
+    align-items: center;
+    }
+    #partners .wrap .left_partners .txt_partners img {
+      display: none;
+    }
+    #partners .wrap .left_partners .title_partners h1 {
+        font-size: 3.7rem;
+    }
+    #partners .wrap .right_partners .txt_logo, .para p {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 1134px){
+    #partners .wrap .left_partners .title_partners h1 {
+        font-size: 3.2rem;
+    }
+    #partners .wrap .right_partners .txt_logo, .para p {
+        font-size: 2.1rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #partners .wrap .left_partners .title_partners h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 921px) {
+    #partners .wrap .left_partners .title_partners h1 {
+        font-size: 2.8rem;
+    }
+    #partners .wrap .right_partners .txt_logo, .para p {
+        font-size: 1.7rem;
+    }
+}
 
 /*DESIGN*/
 
@@ -3245,6 +3292,7 @@ PARTENERS*/
 }
 
 #design .slides li img{
+    z-index: 1;
     transition: .4s all;
 }
 
@@ -3405,6 +3453,11 @@ CONSEIL*/
 }
 
 
+/*POUR LE RESPONSIVE*/
+
+/*#conseil .card .card2 {
+    padding: 1rem 0rem 6rem 0rem;
+}*/
 /*EQUIPE*/
 
 #equipe{
@@ -3478,7 +3531,8 @@ CONSEIL*/
     background-color: #282B32;
     box-shadow: -7px 12px 40px 5px black;
     border-radius: 50%;
-    padding: 3rem;
+    padding: 2rem;
+    width: 75%;
 }
 
 #equipe .container .equpie_right .img_grand .img_profil img{
@@ -3523,32 +3577,61 @@ CONSEIL*/
     font-family: 'Open Sans', sans-serif;
 }
 
-#conclu{
-    background-color: #F8C44C;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+@media screen and (max-width: 992px) {
+    #equipe .container .equpie_right .txt_profil .nom_prenom, .age_job, .desc p {
+        font-size: 2rem;
+    }
 }
 
-#conclu .wrap{
+/*
+CONCLU
+*/
+
+#conclu{
+    background-color: white;
+    padding-bottom: 25rem;
+}
+
+
+
+
+#conclu .wave_hover {
+    background-color: #F8C44C;
+}
+
+#conclu .wrap4{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 2rem;
     align-items: center;
 }
 
-#conclu .wrap h1{
+#conclu .wrap4 .title h1{
     font-size: 5rem;
-    color: white;
+    color: black;
     text-transform: uppercase;
     text-align: center;
     font-family: 'Archivo Black', sans-serif;
-    padding-bottom: 3rem;
+    padding-bottom: 2.5rem;
     text-shadow:  -7px 12px 40px black;
 }
 
-#conclu .wrap p{
-    color: white;
-    font-size: 3.6rem;
+#conclu .wrap4 .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+}
+
+#conclu .wrap4 #important{
+    color: #F8C44C;
+}
+
+#conclu .wrap4 .content p{
+    color: black;
+    font-size: 2.3rem;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
 }
+

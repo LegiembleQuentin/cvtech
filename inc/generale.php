@@ -90,6 +90,7 @@ function cvtech_scripts() {
             'ajaxUrl' => admin_url( 'admin-ajax.php' ),
             'home'    => path('/'),
             'theme'   => get_template_directory_uri(),
+            'logo_inscription'   => asset('img/logo-inscription-cropped.svg'),
         ) ), 'before' );
 
     wp_enqueue_script( 'cvtech-burger', get_template_directory_uri() . '/asset/js/burger.js', array(), _S_VERSION, true );
@@ -102,7 +103,9 @@ function cvtech_scripts() {
     if(is_page_template('template-register.php')) {
         wp_enqueue_script('register-js', get_template_directory_uri() . '/asset/js/register.js', array(), _S_VERSION, true);
     }
-
+    if(is_page_template( 'template-listingCV.php' )) {
+        wp_enqueue_script('listingcv-js', get_template_directory_uri() . '/asset/js/listingcv.js', array(), _S_VERSION, true);
+    }
     if(is_page_template('template-addcv_template1.php')){
         wp_enqueue_script('addskill-js', get_template_directory_uri() . '/asset/js/js_cv/addskill.js', array(), _S_VERSION, true);
         wp_enqueue_script('addexp-js', get_template_directory_uri() . '/asset/js/js_cv/addexp.js', array(), _S_VERSION, true);
