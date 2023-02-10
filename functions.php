@@ -11,7 +11,11 @@ require get_template_directory() . '/inc/parameters.php';
 
 
 require get_template_directory() . '/inc/ajax/ajax-register.php';
+
 require get_template_directory() . '/inc/ajax/ajax-listingcv.php';
+
+require get_template_directory() . '/inc/ajax/ajax-add_cv.php';
+
 
 
 require get_template_directory() . '/inc/extra/template-tags.php';

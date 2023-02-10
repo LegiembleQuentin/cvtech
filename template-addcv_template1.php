@@ -3,11 +3,11 @@
 get_header();
 ?>
 <section id="creationCV">
-    <div class="cv_infos">
+    <div class="cv_left">
 
-        <h2>Informations principales</h2>
+        <form action="" id="cv_form" novalidate>
 
-        <form action="" id="cv_form">
+            <h2>Informations principales</h2>
 
             <div id="cv_main_infos">
                 <label for="job">Poste recherché </label>
@@ -131,8 +131,8 @@ get_header();
             </div>
 
 
-
-        </div>
+            <input type="submit" id="cv_submit" value="Envoyer mon cv">
+        </form>
 
 
     </div>
