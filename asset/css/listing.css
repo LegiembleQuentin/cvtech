@@ -89,3 +89,6 @@
     flex-direction: column;
     align-items: center;
 }
+.padding-top-listing{
+    padding-top: 2rem;
+}

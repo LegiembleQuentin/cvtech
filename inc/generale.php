@@ -69,6 +69,8 @@ function cvtech_scripts() {
     }
     if(is_page_template( 'template-listingCV.php' )) {
         wp_enqueue_style('listing-css', get_template_directory_uri() . '/asset/css/listing.css', array(), _S_VERSION);
+//        wp_enqueue_script('listing-js', get_template_directory_uri() . '/asset/js_cv/pagination.js', array(), _S_VERSION, true);
+
     }
     if(is_page_template( 'template-cgu.php' )) {
         wp_enqueue_style('cgu-css', get_template_directory_uri() . '/asset/css/cgu.css', array(), _S_VERSION);

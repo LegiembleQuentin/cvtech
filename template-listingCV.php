@@ -17,7 +17,17 @@ get_header(); ?>
             die("Connection failed: " . mysqli_connect_error());
         }
 
-        $sql = "SELECT * FROM cvtc_cv";
+
+        $limit = 5;
+        $current_page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+        $start = ($current_page - 1) * $limit;
+
+        $sql = "SELECT * FROM cvtc_cv LIMIT $start, $limit";
+        $result = mysqli_query($conn, $sql);
+
+        $total_records = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM cvtc_cv"));
+        $total_pages = ceil($total_records / $limit);
+
         $result = mysqli_query($conn, $sql);
 
         if (!$result) {
@@ -43,6 +53,14 @@ get_header(); ?>
 
                 echo "</div>";
                 echo "</div>";
+                if ($total_pages > 1) {
+                    echo "<div class='pagination'>";
+                    for ($i = 1; $i <= $total_pages; $i++) {
+                        $class = ($i == $current_page) ? 'current-page' : '';
+                        echo "<a href='?page=$i' class='$class'>$i</a>";
+                    }
+                    echo "</div>";
+                }
             }
         } else {
             echo "Pas de résultat";
@@ -58,7 +76,6 @@ get_header(); ?>
         $password = "";
         $dbname = "wp-cvtech";
 
-        // Créez la connexion
         $conn = mysqli_connect($servername, $username, $password, $dbname);
 
         if (!$conn) {
@@ -72,6 +89,7 @@ get_header(); ?>
 
             if (mysqli_num_rows($result) > 0) {
                 $num_rows = mysqli_num_rows($result);
+                echo "<div class='padding-top-listing'>";
                 echo "Résultats de la recherche pour la compétence recherchée :<br>";
                 echo "Nombre de compétences trouvées : " . $num_rows . "<br>";
 
