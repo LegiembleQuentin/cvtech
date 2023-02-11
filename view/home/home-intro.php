@@ -17,5 +17,4 @@
     <div class="wave">
         <img class="wave_hover" src="<?php echo asset('img/svg/home/vague.svg'); ?>" alt="vague blanche">
     </div>
-
 </section>

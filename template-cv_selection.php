@@ -10,7 +10,6 @@ get_header();
 
         <a href="<?= path($web['page']['template']['1']['slug'])?>">Template 1 (à remplacer par l'image du CV)</a>
 
-
     </section>
 
 

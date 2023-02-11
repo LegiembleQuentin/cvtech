@@ -12,32 +12,32 @@ $(window).on('load',function () {
 
 const team = [
     {
-        name: "Prince",
-        firstName: "Ndiaye",
-        age: 25,
+        name: "Quentin",
+        firstName: "Legiemble",
+        age: 22,
         job: "Developpeur Fullstack",
         desc: "La collaboration est la clé pour faire un excellent travail."
     },
     {
-        name: "Claude",
-        firstName: "Niang",
-        age: 27,
+        name: "Prince",
+        firstName: "Petyth",
+        age: 23,
         job: "Developpeur Fullstack",
-        desc: "Chacun de nous apporte ses propres compétences et expériences uniques pour former une équipe inarrêtable."
+        desc: "Nous former une équipe inarrêtable."
     },
     {
-        name: "Lendoly",
-        firstName: "Diop",
-        age: 31,
+        name: "Theo",
+        firstName: "Lemettais",
+        age: 21,
         job: "Developpeur Fullstack",
         desc: "c'est en équipe que nous allons plus loin."
     },
     {
-        name: "Mohamed",
-        firstName: "Diouf",
-        age: 28,
+        name: "Lucas",
+        firstName: "Eliot",
+        age: 20,
         job: "Developpeur Fullstack",
-        desc: "L'union fait la force, et c'est en travaillant ensemble que nous atteindrons nos objectifs"
+        desc: "L'union fait la force."
     }
 ];
 
@@ -54,10 +54,31 @@ images2.forEach((image, index) => {
         const member = team[index];
         name.textContent = "Nom :  " + member.name;
         firstName.textContent = "Prénom :  " + member.firstName;
-        age.textContent = "Age :  " + member.age;
+        age.textContent = "Age :  " + member.age + " ans";
         job.textContent = member.job;
         desc.textContent = member.desc;
         profilImage.src = image.src;
     });
 });
+
+$('.dropdown i').click(function(e) {
+    $('.dropdown-content').toggle();
+    $(this).toggleClass("fa-chevron-up fa-chevron-down");
+    e.stopPropagation();
+});
+
+$('.dropdown-content a').click(function() {
+    var text = $(this).text();
+    var href = $(this).attr("href");
+    $('.dropdown .replace').text(text);
+    $('.dropdown .replace').attr("href", href);
+    $('.dropdown-content').toggle();
+    $('.dropdown i').toggleClass("fa-chevron-up fa-chevron-down");
+});
+
+$(document).click(function() {
+    $('.dropdown-content').hide();
+    $('.dropdown i').removeClass("fa-chevron-up").addClass("fa-chevron-down");
+});
+
 
