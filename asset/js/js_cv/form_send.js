@@ -6,8 +6,16 @@ cvForm.addEventListener('submit', function(e){
     e.preventDefault();
     // btnSubmit.disabled = true;
 
-    let infos = [];
+    let lookedJob = document.querySelector('#job').value;
+    let name = document.querySelector('#name').value;
+    let firstname = document.querySelector('#firstname').value;
+    let email = document.querySelector('#email').value;
+    let phone = document.querySelector('#phone').value;
+    let age = document.querySelector('#age').value;
+    let mainDesc = document.querySelector('#main_desc').value;
 
+
+    let infos = [];
     //AJOUT DES SKILLS
     let allSkills = document.querySelectorAll('.input_skill')
     let skillList = [];
@@ -40,6 +48,13 @@ cvForm.addEventListener('submit', function(e){
     updateCVArray('.textarea_forma_desc', formaInfos);
     infos.push(formaInfos);
 
+    let allHobbies = document.querySelectorAll('.input_hobbie')
+    let hobbieList = [];
+    allHobbies.forEach(function(hobbie){
+        hobbieList.push(hobbie.value);
+    })
+    infos.push(hobbieList);
+
     console.log(infos);
 
     infos = JSON.stringify(infos);
@@ -47,6 +62,13 @@ cvForm.addEventListener('submit', function(e){
     let params = new FormData();
     params.append('action', 'add_cv');
     params.append('infos', infos);
+    params.append('lookedJob', lookedJob);
+    params.append('name', name);
+    params.append('firstname', firstname);
+    params.append('email', email);
+    params.append('phone', phone);
+    params.append('age', age);
+    params.append('mainDesc', mainDesc);
 
     fetch(MYSCRIPT.ajaxUrl, {
         method: 'post',
@@ -58,7 +80,7 @@ cvForm.addEventListener('submit', function(e){
         let errors = data;
         console.log(errors);
 
-        if (!isArrayEmpty(errors)) {
+        if (!isObjectEmpty(errors)) {
             console.log('ya des erreurs')
             //skill
             setErrorMessageForArray('.error_skill', errors['skills']);
@@ -71,6 +93,17 @@ cvForm.addEventListener('submit', function(e){
             setErrorMessageWithArrayKey('.error_city', errors['jobs'], 'city');
             setErrorMessageWithArrayKey('.error_job_desc', errors['jobs'], 'desc');
 
+            //formations
+            setErrorMessageWithArrayKey('.error_formation_name', errors['formations'], 'name');
+            setErrorMessageWithArrayKey('.error_school', errors['formations'], 'school');
+            setErrorMessageWithArrayKey('.error_degree', errors['formations'], 'degree');
+            setErrorMessageWithArrayKey('.error_forma_city', errors['formations'], 'city');
+            setErrorMessageWithArrayKey('.error_forma_starting_date', errors['formations'], 'starting date');
+            setErrorMessageWithArrayKey('.error_forma_ending_date', errors['formations'], 'ending date');
+            setErrorMessageWithArrayKey('.error_forma_desc', errors['formations'], 'desc');
+
+            //hobbies
+            setErrorMessageForArray('.error_hobbie', errors['hobbies']);
 
 
         }else{
