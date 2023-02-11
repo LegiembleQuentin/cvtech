@@ -4,10 +4,8 @@
     justify-content: space-between;
 }
 
-
-
-
 .person-box {
+    display: block;
     width: 300px;
     background-color: #0e0f2d;
     border: 1px solid #333;
