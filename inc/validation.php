@@ -62,6 +62,14 @@ function validationOptionnalPhone($errors, $phone, $entry = 'phone') {
     }
     return $errors;
 }
+function validationOptionalAge($errors,$entry,$key='age'){
+    if(!empty($entry)){
+        if(mb_strlen($entry) > 3 || !ctype_digit($entry)){
+            $errors[$key] = 'Merci de renseigner un age valide';
+        }
+    }
+    return $errors;
+}
 
 function validationOptionnalDate($errors, $date, $entry = 'date') {
     if (!empty($date)) {
