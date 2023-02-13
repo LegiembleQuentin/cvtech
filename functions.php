@@ -4,6 +4,7 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 require get_template_directory() . '/inc/generale.php';
 require get_template_directory() . '/inc/func.php';
 require get_template_directory() . '/inc/validation.php';
+require get_template_directory() . '/inc/wpdbrequest.php';
 
 
 require get_template_directory() . '/inc/image.php';

@@ -7,10 +7,16 @@
     justify-content: space-between;
 }
 
+/*
+PARTIE THEO
+*/
 form{
     display: flex;
     gap: 1.3rem;
 }
+/*
+PARTIE THEO
+*/
 
 input[type=text]{
     border: 2px solid #0e0f2d;
@@ -60,7 +66,10 @@ button{
 }
 
 .person-box {
+    /*PARTIE DE THEO*/
     gap: 1.8rem;
+    display: block;
+    /*PARTIE DE THEO*/
     width: 300px;
     background-color: #0e0f2d;
     border: 1px solid #333;

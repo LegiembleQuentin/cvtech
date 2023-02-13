@@ -81,3 +81,16 @@ function showJson($data)
         die('Error in json encoding');
     }
 }
+
+function isEmptyArray($array) {
+    foreach ($array as $value) {
+        if (is_array($value)) {
+            if (!isEmptyArray($value)) {
+                return false;
+            }
+        } else if (!empty($value)) {
+            return false;
+        }
+    }
+    return true;
+}

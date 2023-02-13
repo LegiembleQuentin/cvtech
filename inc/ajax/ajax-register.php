@@ -73,6 +73,7 @@ function register(){
                 '%d',
                 '%d',
                 '%s',
+                '%s',
             )
         );
 

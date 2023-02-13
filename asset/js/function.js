@@ -77,6 +77,19 @@ function isArrayEmpty(obj) {
     return true;
 }
 
+function isObjectEmpty(obj) {
+    for (let key in obj) {
+        if (typeof obj[key] === 'object') {
+            if (!isObjectEmpty(obj[key])) {
+                return false;
+            }
+        } else if (obj[key] !== '') {
+            return false;
+        }
+    }
+    return true;
+}
+
 function setErrorMessage(spanError, msgError) {
     if (msgError) {
         spanError.innerText = msgError;
