@@ -1,11 +1,75 @@
+.wrap3 {max-width: 1300px; width:100%;margin: 0 auto}
+
+
 #recruteur{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
+/*
+PARTIE THEO
+*/
+form{
+    display: flex;
+    gap: 1.3rem;
+}
+/*
+PARTIE THEO
+*/
+
+input[type=text]{
+    border: 2px solid #0e0f2d;
+    color: black;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+
+}
+
+button{
+    background-color: #0e0f2d;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 5rem 0rem;
+}
+
+.modal-footer{
+    padding: 2rem 0rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal-footer a{
+    background: white;
+    padding: 1rem 4rem;
+    border-radius: 5px;
+    color: #F8C44C;
+    transition: all .4s;
+}
+
+.modal-footer a:hover{
+    background: #F8C44C;
+    color: #FFFFFF;
+}
+
 .person-box {
+    /*PARTIE DE THEO*/
+    gap: 1.8rem;
     display: block;
+    /*PARTIE DE THEO*/
     width: 300px;
     background-color: #0e0f2d;
     border: 1px solid #333;
@@ -15,6 +79,10 @@
     position: relative;
     transition: all 0.3s ease-in-out;
     padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
 .person-box p{
@@ -45,8 +113,6 @@
     content: "";
     width: 0;
     height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
     border-bottom: 20px solid #0e0f2d;
     position: absolute;
     bottom: -20px;
@@ -58,6 +124,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background: url("../img/fond_recruteur.png") no-repeat center;
+    background-size: cover;
 }
 
 .person-box h3 {
@@ -72,6 +140,13 @@
     margin-bottom: 10px;
 }
 
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+}
+
 .person-info p span {
     font-weight: bold;
 }
@@ -79,7 +154,7 @@
 .person-box:hover {
     box-shadow: 0 0 10px #333;
     cursor: pointer;
-    transform: translateY(-10px);
+    transform: scale(1.1);
 }
 
 .person-info a {
@@ -104,4 +179,114 @@
 }
 .padding-top-listing{
     padding-top: 2rem;
+}
+
+
+
+
+#modal1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background-color: #0e0f2d;
+    padding: 20px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+.show{
+    display: block;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    gap: 15rem;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.link_modal{
+    background: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: #F8C44C;
+    transition: all .4s;
+    width: 34%;
+}
+
+.link_modal:hover{
+    background-color: #F8C44C;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: -108px;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #858796;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e3e6f0;
+    border-radius: 0.35rem;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #3a3b45;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    transition: all .4s;
+}
+
+.dropdown-item:hover {
+    color: #F8C44C;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    animation: dropdown-animation 0.5s;
+}
+
+.link{
+    position: relative;
+}
+.nav-link{
+    color: #FFFFFF;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
