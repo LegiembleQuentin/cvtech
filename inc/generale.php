@@ -32,6 +32,9 @@ function cvtech_content_width() {
 }
 add_action( 'after_setup_theme', 'cvtech_content_width', 0 );
 
+
+
+
 function cvtech_widgets_init() {
     register_sidebar(
         array(
@@ -121,3 +124,26 @@ function cvtech_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'cvtech_scripts' );
+/*
+function wcmo_get_current_user_roles() {
+ if( is_user_logged_in() ) {
+     $user = wp_get_current_user();
+     $roles = ( array ) $user->roles;
+     return $roles;
+ } else {
+     return array();
+ }
+}
+
+function wcmo_redirect_to_template_listing() {
+    if (in_array("recruteur", wcmo_get_current_user_roles())) {
+        wp_redirect( home_url( '/template-listingCV.php' ) );
+        exit;
+    } else {
+        wp_die( __( 'Accès refusé' ) );
+        wp_redirect( home_url( '/' ) );
+    }
+}
+add_action( 'template_redirect', 'wcmo_redirect_to_template_listing' );
+*/
+

@@ -8,16 +8,16 @@
         <div class="container">
             <div class="equipe_left">
                 <div class="img">
-                    <img src="<?php echo asset('img/equipe/prince.svg'); ?>" alt="">
+                    <img src="<?php echo asset('img/equipe/quentin.jpg'); ?>" alt="">
                 </div>
                 <div class="img">
                     <img src="<?php echo asset('img/equipe/prince.svg'); ?>" alt="">
                 </div>
                 <div class="img">
-                    <img src="<?php echo asset('img/equipe/lendoly.svg'); ?>" alt="">
+                    <img src="<?php echo asset('img/equipe/theo.jpg'); ?>" alt="">
                 </div>
                 <div class="img">
-                    <img src="<?php echo asset('img/equipe/mohamed.svg'); ?>" alt="">
+                    <img src="<?php echo asset('img/equipe/lucas.jpg'); ?>" alt="">
                 </div>
             </div>
             <div class="equpie_right">
