@@ -202,10 +202,14 @@ button{
     display: block;
 }
 
-.title{
+.title {
     display: flex;
     flex-direction: row;
     gap: 15rem;
+}
+
+.padding-top-listing{
+font-weight: bold;
 }
 
 .dropdown {
