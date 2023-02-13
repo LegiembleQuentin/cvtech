@@ -5,9 +5,12 @@ add_action('wp_ajax_nopriv_get_Cv_data', 'getCvAjax');
 
 function getCvAjax()
 {
-// $cv
     global $wpdb;
-    $cvs = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}cv ORDER BY created_at ASC");
+    $cvs['main'] = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}cv ORDER BY created_at DESC");
+    $cvs['skills'] = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}skill");
+    $cvs['formations'] = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}formation");
+    $cvs['exp'] = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}experiences");
+    $cvs['hobbies'] = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}experiences");
+
     showJson($cvs);
-    showJson('ok good');
 }

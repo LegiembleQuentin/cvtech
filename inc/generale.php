@@ -87,6 +87,9 @@ function cvtech_scripts() {
     if(is_page_template('template-contactus.php')) {
         wp_enqueue_style('contact-css', get_template_directory_uri() . '/asset/css/contact.css', array(), _S_VERSION);
     }
+    if(is_page_template('template-addcv_template1.php')){
+        wp_enqueue_style('addcv-css', get_template_directory_uri() . '/asset/css/addcv.css', array(), _S_VERSION);
+    }
     //JS
     wp_deregister_script('jquery');
     wp_enqueue_script('jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js', array(), _S_VERSION, true);
@@ -100,8 +103,8 @@ function cvtech_scripts() {
 
     wp_enqueue_script( 'cvtech-burger', get_template_directory_uri() . '/asset/js/burger.js', array(), _S_VERSION, true );
     wp_enqueue_script('function-js', get_template_directory_uri() . '/asset/js/function.js', array(), _S_VERSION, true);
+    wp_enqueue_script('login-js', get_template_directory_uri() . '/asset/js/login.js', array(), _S_VERSION, true);
     wp_enqueue_script('main', get_template_directory_uri() . '/asset/js/main.js', array(), _S_VERSION, true);
-
 
     if(is_page_template('template-home.php')){
         wp_enqueue_script('jquery-home', get_template_directory_uri() . '/asset/flexslider/jquery.flexslider.js', array(), _S_VERSION, true);
@@ -112,6 +115,7 @@ function cvtech_scripts() {
     if(is_page_template( 'template-listingCV.php' )) {
         wp_enqueue_script('pagination-js', get_template_directory_uri() . '/asset/js/pagination.js', array(), _S_VERSION, true);
         wp_enqueue_script('listingcv-js', get_template_directory_uri() . '/asset/js/listingcv.js', array(), _S_VERSION, true);
+        wp_enqueue_script('pdf-js', get_template_directory_uri() . '/asset/js/pdf.js', array(), _S_VERSION, true);
 
     }
     if(is_page_template('template-addcv_template1.php')){

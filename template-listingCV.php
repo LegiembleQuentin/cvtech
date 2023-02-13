@@ -52,7 +52,7 @@ get_header(); ?>
                             <i class="fas fa-ellipsis-v"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="optionsDropdown">
-                            <a class="dropdown-item" href="#">Télécharger le CV</a>
+                            <a id="dowload-pdf" class="dropdown-item download-pdf" href="#">Télécharger le CV</a>
                             <a class="dropdown-item" href="#">Supprimer le CV</a>
                         </div>
                     </div>
@@ -66,6 +66,10 @@ get_header(); ?>
         <div id="pagination" class="pagination"></div>
         </div>
     </section>
+    <script>    src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"    </script>
+
+
+
 <?php get_footer();
 
 

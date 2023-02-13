@@ -93,6 +93,8 @@ function isObjectEmpty(obj) {
 function setErrorMessage(spanError, msgError) {
     if (msgError) {
         spanError.innerText = msgError;
+    }else {
+        spanError.innerText = '';
     }
 }
 
@@ -140,4 +142,11 @@ function setErrorMessageWithArrayKey(selector, errors, key) {
         setErrorMessage(spanError, errors[i][key]);
         i++;
     });
+}
+
+function toggleModal(modal) {
+    return function (e) {
+        e.preventDefault();
+        modal.classList.toggle('hidden');
+    }
 }
