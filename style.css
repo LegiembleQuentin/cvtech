@@ -178,7 +178,7 @@ img {
 }
 @media (max-width: 768px) {
 	.ul-footer {
-		gap:3rem;
+		gap:2rem;
 	}
 	.padding-footer {
 		display: flex;
@@ -231,6 +231,15 @@ img {
 }
 
 
+
+@media (max-width: 644px) {
+	.ul-footer {
+		display: flex;
+		flex-direction: column ;
+	}
+
+}
+
 .wrap {
 	max-width: 1200px;
 	width: 100%;
@@ -239,7 +248,8 @@ img {
 
 /*cgu !!!!!!!!!!!!!!*/
 .color-cgu {
-	background-color: white;
+	background: url("asset/img/fond_404.png") no-repeat center;
+	background-size: cover;
 	color: black;
 }
 
@@ -289,14 +299,14 @@ img {
 .text-sous-404 {
 	font-size: 2rem;
 	text-align: center;
+	font-weight: bold;
 	padding-bottom: 8rem;
 }
 
 /*condition*/
 
 .color-cgu {
-	padding: 2rem;
-	margin: 2rem;
+	padding: 9rem 0rem;
 }
 
 
