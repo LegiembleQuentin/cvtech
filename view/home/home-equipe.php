@@ -33,8 +33,8 @@
                 </div>
                 <div class="txt_profil">
                     <div class="nom_prenom">
+                        <p>Prénom : </p>
                         <p>Nom : </p>
-                        <p>Prenom : </p>
                     </div>
                     <div class="age_job">
                         <p>Age :</p>

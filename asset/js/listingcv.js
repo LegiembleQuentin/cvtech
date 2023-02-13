@@ -1,3 +1,30 @@
+let currentPage = 1;
+let itemsPerPage = 5;
+
+const prevButton = document.createElement('button');
+prevButton.innerText = 'Précédent';
+prevButton.classList.add('prev-button');
+
+const nextButton = document.createElement('button');
+nextButton.innerText = 'Suivant';
+nextButton.classList.add('next-button');
+
+prevButton.addEventListener('click', () => {
+    if (currentPage > 1) {
+        currentPage--;
+        renderData();
+    }
+});
+
+nextButton.addEventListener('click', () => {
+    if (currentPage < totalPages) {
+        currentPage++;
+        renderData();
+    }
+});
+
+const totalPages = Math.ceil(data.length / itemsPerPage);
+const dataForCurrentPage = data.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 const recruteur = document.querySelector('#recruteur');
 const divModal = document.querySelector('.content_txt');
 const div_Modal = document.querySelector('#modal1')
