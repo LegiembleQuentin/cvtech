@@ -11,7 +11,7 @@
                     <img src="<?php echo asset('img/equipe/quentin.jpg'); ?>" alt="">
                 </div>
                 <div class="img">
-                    <img src="<?php echo asset('img/equipe/prince.svg'); ?>" alt="">
+                    <img src="<?php echo asset('img/equipe/prince.jpg'); ?>" alt="">
                 </div>
                 <div class="img">
                     <img src="<?php echo asset('img/equipe/theo.jpg'); ?>" alt="">
@@ -23,7 +23,7 @@
             <div class="equpie_right">
                 <div class="img_grand">
                     <div class="img_profil">
-                        <img src="<?php echo asset('img/equipe/prince.svg'); ?>" alt="">
+                        <img src="<?php echo asset('img/equipe/prince.jpg'); ?>" alt="">
                     </div>
                     <div class="reseaux">
                         <img src="<?php echo asset('img/equipe/logo_linkedin.svg'); ?>" alt="linkedin">

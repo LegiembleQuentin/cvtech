@@ -10,7 +10,7 @@ function getCvAjax()
     $cvs['skills'] = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}skill");
     $cvs['formations'] = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}formation");
     $cvs['exp'] = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}experiences");
-    $cvs['hobbies'] = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}experiences");
+    $cvs['hobbies'] = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}hobbies");
 
     showJson($cvs);
 }
