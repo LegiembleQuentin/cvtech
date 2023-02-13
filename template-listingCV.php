@@ -66,9 +66,7 @@ get_header(); ?>
         <div id="pagination" class="pagination"></div>
         </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
-
-    <button id="download-pdf">Télécharger PDF</button>
+    <script>    src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"    </script>
 
 
 

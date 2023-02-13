@@ -6,7 +6,7 @@
     pdf.fromHTML(modalContent, 15, 15, {
     width: 170
 });
-    pdf.save("modal-content.pdf");
+    pdf.save("Candidat-CV.pdf");
 };
 
     document.querySelector(".download-pdf").addEventListener("click", downloadPDF);
