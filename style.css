@@ -179,6 +179,8 @@ img {
 @media (max-width: 768px) {
 	.ul-footer {
 		gap:2rem;
+		display: flex;
+		flex-direction: column;
 	}
 	.padding-footer {
 		display: flex;

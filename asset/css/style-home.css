@@ -138,6 +138,7 @@ img{
     #intro .wave, #design .wave {
         padding: 19.5rem 0;
     }
+
 }
 
 
@@ -356,10 +357,7 @@ PARTENERS*/
     gap: 2rem;
 }
 
-#partners .wrap  .left_partners .txt_partners p{
-    font-size: 2rem;
-    font-family: 'Poppins', sans-serif
-}
+
 
 #partners .wrap  .left_partners .txt_partners img{
     width: 8%;
@@ -3155,7 +3153,7 @@ PARTENERS*/
 }
 
 #partners .left_partners .txt_partners p{
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-family: 'Poppins', sans-serif
 }
 
@@ -3234,7 +3232,7 @@ PARTENERS*/
       display: none;
     }
     #partners .wrap .left_partners .title_partners h1 {
-        font-size: 3.7rem;
+        font-size: 2.7rem;
     }
     #partners .wrap .right_partners .txt_logo, .para p {
         font-size: 2.3rem;
@@ -3254,17 +3252,56 @@ PARTENERS*/
     #partners .wrap .left_partners .title_partners h1 {
         font-size: 3rem;
     }
+
 }
 
 @media screen and (max-width: 921px) {
     #partners .wrap .left_partners .title_partners h1 {
-        font-size: 2.8rem;
+        font-size: 2.3rem;
     }
     #partners .wrap .right_partners .txt_logo, .para p {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 921px) {
+    #partners .wrap .left_partners .title_partners h1 {
+        font-size: 2.3rem;
+    }
+    #partners .wrap .right_partners .txt_logo, .para p {
+        font-size: 1.4rem;
     }
 }
 
+@media screen and (max-width: 680px) {
+    #partners .wrap .left_partners .title_partners h1 {
+        font-size: 1.7rem;
+    }
+    #partners .left_partners .txt_partners p{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 610px) {
+    #partners .wrap .left_partners .title_partners h1 {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 525px) {
+    #partners .wrap .left_partners .title_partners h1 {
+        font-size: 1.4rem;
+    }
+    #partners .left_partners .txt_partners p{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 430px) {
+    #partners .wrap .left_partners .title_partners h1 {
+        font-size: 1.1rem;
+    }
+
+    #partners .left_partners .txt_partners p{
+        font-size: 0.8rem;
+    }
+}
 /*DESIGN*/
 
 #design{
@@ -3362,6 +3399,7 @@ CONSEIL*/
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 2rem;
 }
 
 #conseil h1{
@@ -3394,15 +3432,21 @@ CONSEIL*/
 }
 
 #conseil .card .card1 {
-    padding: 1rem 0rem 6rem 0rem;
+    padding: 1rem 0rem 0rem;
+    height: 360px;
+    padding: 1rem;
 }
 
 #conseil .card .card2 {
-    padding: 1rem 0rem 3rem 0rem;
+    padding: 1rem 0rem 0rem;
+    height: 360px;
+    padding: 1rem;
 }
 
 #conseil .card .card3 {
-    padding: 1rem 0rem 5.2rem 0rem;
+    padding: 1rem 0rem 0rem;
+    height: 360px;
+    padding: 1rem;
 }
 
 
@@ -3452,7 +3496,30 @@ CONSEIL*/
     text-align: center;
 }
 
+@media screen and (max-width: 690px) {
+    #conseil .card {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    #conseil .card .carte {
+        width: 32%;
+    }
 
+}
+@media screen and (max-width: 690px) {
+
+    #conseil .card .carte {
+        width: 42%;
+    }
+
+}
+@media screen and (max-width: 500px) {
+
+    #conseil .card .carte {
+        width: 82%;
+    }
+
+}
 /*POUR LE RESPONSIVE*/
 
 /*#conseil .card .card2 {
@@ -3494,6 +3561,7 @@ CONSEIL*/
     display: flex;
     flex-direction: column;
     gap: 5rem;
+    width: 20%;
 }
 
 #equipe .container .equipe_left .img{
@@ -3517,6 +3585,7 @@ CONSEIL*/
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    width: 75%;
 }
 
 #equipe .container .equpie_right .img_grand{

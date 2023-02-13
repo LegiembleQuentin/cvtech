@@ -1,5 +1,5 @@
 let currentPage = 1;
-let itemsPerPage = 10;
+let itemsPerPage = 5;
 let pageNumbers = [];
 
 const list = document.getElementsByClassName("person-box");
@@ -48,4 +48,4 @@ const appendPageLinks = (list) => {
 };
 
 showPage(list, currentPage);
-appendPageLinks(list)
+appendPageLinks(list);
