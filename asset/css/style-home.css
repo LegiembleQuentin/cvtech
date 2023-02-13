@@ -29,11 +29,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     box-sizing: border-box;
 }
 
-.wrap4{
-    max-width: 1450px;
-    width:100%;
-    margin: 0 auto
-}
 
 
 html{
@@ -45,6 +40,9 @@ html{
 img{
     width: 100%;
 }
+
+
+/*INTRO*/
 
 
 .wrap3 {max-width: 1300px; width:100%;margin: 0 auto}
@@ -186,15 +184,13 @@ img{
         align-items: center;
     }
 }
-
-
 @media screen and (max-width:  575px) {
     #intro .wave, #design .wave {
         padding: 28.8rem 0;
     }
     #intro .left {
         padding: 0;
-        width: 100%;
+        width: 89%;
         align-items: center;
     }
     #intro .txt_intro h1 {
@@ -260,7 +256,7 @@ img{
 
 @media screen and (max-width: 408px){
     #intro .wave, #design .wave {
-        padding: 31.7rem 0;
+        padding: 33.7rem 0;
     }
 }
 
@@ -469,7 +465,8 @@ PARTENERS*/
         font-size: 2.3rem;
     }
     #partners .wrap .right_partners .txt_logo, .para p {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
+        width: 115%;
     }
 }
 
@@ -496,11 +493,13 @@ PARTENERS*/
 }
 @media screen and (max-width: 430px) {
     #partners .wrap .left_partners .title_partners h1 {
-        font-size: 1.1rem;
+        font-size: 2.7rem;
+        text-align: center;
     }
 
-    #partners .left_partners .txt_partners p{
-        font-size: 0.8rem;
+    #partners .left_partners .txt_partners p {
+        font-size: 1.7rem;
+        text-align: center;
     }
 }
 /*DESIGN*/
@@ -853,6 +852,59 @@ CONSEIL*/
     }
 }
 
+@media screen and (max-width: 590px) {
+    #equipe .container .equpie_right .img_grand {
+        width: 65%;
+    }
+    #equipe .container .equipe_left {
+        display: flex;
+        gap: 5rem;
+        width: 60%;
+        flex-wrap: wrap;
+    }
+    #equipe .container {
+        display: flex;
+        flex-direction: column;
+    }
+    #equipe .container .equipe_left {
+         flex-direction: row;
+    }
+
+    #equipe .container .equpie_right .img_grand {
+        flex-direction: column;
+    }
+
+    #equipe .container .equpie_right {
+        place-items: center;
+    }
+    #equipe .container .equpie_right .img_grand .reseaux {
+        display: flex;
+        flex-direction: row;
+        place-content: center;
+        width: 15%;
+    }
+    #equipe .container .equpie_right .txt_profil .nom_prenom, .age_job {
+        flex-direction: column;
+        gap: 4rem;
+    }
+    #equipe .container .equpie_right .img_grand .img_profil {
+        width: 100%;
+    }
+    #conclu .wrap4 .title h1 {
+        font-size: 3rem;
+    }
+    #conclu .wrap4 {
+        padding: 2rem;
+    }
+    #partners .wrap .right_partners .logo_part {
+        width: 100%;
+    }
+    #partners .wrap .right_partners .logo_partners1, .logo_partners2, .logo_partners3{
+        flex-direction: column;
+        gap: 4rem;
+
+    }
+}
 /*
 CONCLU
 */
