@@ -89,7 +89,6 @@ btnAddJob.addEventListener('click', function(){
 
     let separatorDiv = document.createElement('div');
     separatorDiv.classList.add('separator_div');
-    expContainer.appendChild(separatorDiv);
 
     let xmark = document.createElement ('span');
     xmark.classList.add('cv_section_xmark');
@@ -105,5 +104,6 @@ btnAddJob.addEventListener('click', function(){
 
 
     expContainer.appendChild(newDiv);
+    expContainer.appendChild(separatorDiv);
     j++;
 })

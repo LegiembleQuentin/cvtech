@@ -55,8 +55,6 @@ cvForm.addEventListener('submit', function(e){
     })
     infos.push(hobbieList);
 
-    console.log(infos);
-
     infos = JSON.stringify(infos);
 
     let params = new FormData();
@@ -78,10 +76,8 @@ cvForm.addEventListener('submit', function(e){
     }).then(function(data) {
         // btnSubmit.disabled = false;
         let errors = data;
-        console.log(errors);
 
         if (!isObjectEmpty(errors)) {
-            console.log('ya des erreurs')
 
             //main
             let spanErrorJob = document.querySelector('#error_job_cv');
@@ -131,7 +127,7 @@ cvForm.addEventListener('submit', function(e){
             setErrorMessageForArray('.error_hobbie', errors['hobbies']);
 
         }else{
-            console.log('pas derreur');
+            window.location.href = MYSCRIPT.home;
         }
 
     });

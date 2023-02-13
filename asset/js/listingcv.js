@@ -42,8 +42,16 @@ fetch(MYSCRIPT.ajaxUrl, {
 })
     .then(response => response.json())
     .then(data => {
-        console.log(data);
+        let cvInfos = data;
+        data = data['main'];
+        console.log(cvInfos);
         data.forEach(donnee => {
+            // cvInfos['formations'].forEach(formation => {
+            //     if (formation['id_CV'] == donnee['id']){
+            //         AFFICHER LES INFOS DE LA FORMATION DANS LA MODAL (ex: innerText = formation['name'])
+            //     }
+            // })
+
             const container = document.createElement('div');
             container.classList.add('person-box');
             const divImg = document.createElement('div');

@@ -9,7 +9,7 @@ get_header(); ?>
         $servername = "localhost";
         $username = "root";
         $password = "";
-        $dbname = "wp-cvtech";
+        $dbname = "wp_cvtech";
 
         $conn = mysqli_connect($servername, $username, $password, $dbname);
 
