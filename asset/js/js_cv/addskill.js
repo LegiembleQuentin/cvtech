@@ -23,7 +23,7 @@ btnAddSkill.addEventListener('click', function(){
 
     let xmark = document.createElement ('span');
     xmark.classList.add('cv_section_xmark');
-    xmark.id = 'xmark_skill_' + i;
+    // xmark.id = 'xmark_skill_' + i;
     xmark.innerText = ' X';
     xmark.style.cursor = 'pointer';
 

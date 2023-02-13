@@ -38,6 +38,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 .clear:after { clear:both; }
 .clear { *zoom:1;}
 :root {
+	--vertOlive: #A8BBA0;
 }
 html{
 	font-size: 62.5%;
@@ -444,4 +445,62 @@ header#masthead {
 
 .fa-chevron-down{
 	transition: all .4s;
+}
+
+/* MODAL LOGIN */
+
+#login input {
+	padding: 1rem;
+	border-radius: 15px;
+	width: 40rem;
+	background-color: var(--white);
+}
+#login input[type=submit]{
+	width: 20rem;
+	transition: all .5s;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.3rem;
+}
+#login input[type=submit]:disabled {
+	color: initial;
+	background-color: var(--white);
+	border-color: inherit;
+	cursor: default;
+}
+#login input[type=submit]:hover{
+	background-color: black;
+	color: white;
+}
+#login {
+	z-index: 2;
+	background-color: red;
+	width: 600px;
+	padding: 2rem;
+	position: absolute;
+	right: 25px;
+	top: 80px;
+	border-radius: 15px;
+	transition: all .7s;
+	opacity: 100;
+}
+#login .loginform .xmark {
+	float: right;
+	width: 20px;
+	height: 20px;
+}
+#login .loginform .xmark:hover{
+	cursor: pointer;
+}
+#login.hidden {
+	transition: all .7s;
+	right: -700px;
+	opacity: 0;
+}
+#login form{
+	gap: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+#login form .password a{
+	display: block;
 }

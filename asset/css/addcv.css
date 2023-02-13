@@ -1,0 +1,183 @@
+:root {
+    --vertOlive: #A8BBA0;
+    --dore: #F8C44C;
+    --grisFond: #282B32;
+}
+#creationCV{
+    background-color: var(--grisFond);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.wrapCVform{
+    max-width: 1400px; width:100%;margin: 0 auto;
+    padding: 0 2rem;
+}
+#creationCV label, #creationCV input, #creationCV textarea, #creationCV span{
+    display: block;
+}
+#creationCV input{
+    padding: 1rem 2rem;
+    background-color: white;
+    border-radius: 8px;
+    border: none;
+}
+#creationCV textarea{
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    border: none;
+    resize: vertical;
+}
+#creationCV .separator_div{
+    height: .3rem;
+    background-color: var(--dore);
+    margin: 4rem;
+}
+#creationCV .cv_section_xmark{
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--dore);
+}
+#creationCV .cv_section_xmark:hover{
+    color: red;
+    cursor: pointer;
+}
+#creationCV h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: white;
+}
+
+#creationCV .addBtn {
+    display: flex;
+    justify-content: center;
+}
+#creationCV .addBtn button{
+    padding: 1.2rem 5rem;
+    font-size: 2rem;
+    background-color: black;
+    color: var(--dore);
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.5s ease;
+}
+#creationCV .addBtn button:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+#creationCV span {
+    color: red;
+}
+
+/* MAIN */
+#creationCV #cv_main_infos.wrapCVform {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(168,187,160,0.5);
+    border-radius: 8px;
+    
+}
+#creationCV #cv_main_infos .cv_one_input{
+    width: 45%;
+    margin: 2rem 0;
+}
+#creationCV #cv_main_infos .cv_one_input input{
+    width: 100%;
+}
+#creationCV #cv_main_infos .cv_textarea{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+/* SKILLS */
+#creationCV #cv_skills #skill_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.3333%;
+}
+#creationCV #cv_skills .one_skill{
+    width: 24%;
+    margin: 2rem 0
+}
+#creationCV #cv_skills .one_skill input{
+    width: 100%;
+}
+
+/* EXP */
+#creationCV #cv_exp .one_exp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#creationCV #cv_exp .one_exp .cv_job_one_input{
+    width: 45%;
+    margin: 2rem 0;
+}
+#creationCV #cv_exp .one_exp .cv_job_one_input input{
+    width: 100%;
+}
+#creationCV #cv_exp .one_exp .cv_job_textarea{
+    width: 100%;
+}
+
+/* FORMATIONS */
+#creationCV #cv_formations .one_formation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+}
+#creationCV #cv_formations .one_formation .cv_forma_one_input{
+    width: 45%;
+    margin: 2rem 0;
+}
+#creationCV #cv_formations .one_formation .cv_forma_one_input input{
+    width: 100%;
+}
+#creationCV #cv_formations .one_formation .cv_forma_textarea{
+    width: 100%;
+}
+
+/* HOBBIES */
+#creationCV #cv_hobbies #hobbies_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.3333%;
+}
+#creationCV #cv_hobbies .one_hobbie{
+    width: 24%;
+    margin: 2rem 0
+}
+#creationCV #cv_hobbies .one_hobbie input{
+    width: 100%;
+}
+
+/* SUBMIT */
+#creationCV .divSubmitBtn{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+#creationCV .divSubmitBtn input[type=submit]{
+    padding: 1.5rem 10rem;
+    background-color: var(--dore);
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.5s ease;
+}
+#creationCV .divSubmitBtn input[type=submit]:hover{
+    background-color: black;
+    color: var(--dore);
+    transform: scale(1.2);
+    cursor: pointer;
+}
