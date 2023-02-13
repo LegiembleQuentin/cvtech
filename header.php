@@ -51,7 +51,7 @@
                             <a class="li-header color-white box-yellow" href="" title="">Inscription</a>
                         </li>
                         <li class=" border-twenty">
-                            <a class="li-header color-white box-yellow" href="" title="">Connexion</a>
+                            <a id="login_nav" class="li-header color-white box-yellow" href="" title="">Connexion</a>
                         </li>
                     </div>
                 </ul>
@@ -63,9 +63,29 @@
                     <ul>
                         <li  class=" border-top li-header"><a class="a-header" href="#">Contactez-Nous</a></li>
                         <li  class="li-header"><a class="a-header"="#">Inscription</a></li>
-                        <li  class="li-header"><a class="a-header" href="#">Connexion</a></li>
+                        <li  class="li-header" id="login_burger"><a class="a-header" href="#">Connexion</a></li>
                     </ul>
                 </nav>
+        </div>
+
+        <div id="login" class="hidden">
+            <div class="loginform">
+                <div class="xmark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg></div>
+                <form action="" method="post">
+
+                    <input type="text" name="login" id="mail" value="" placeholder="Email">
+
+                    <div class="password">
+                        <input type="password" name="password" id="password" value="" placeholder="Mot de passe">
+                        <a href="forgotpassword.php">Mot de passe oublié ?</a>
+                    </div>
+
+                    <span class="error"></span>
+
+                    <input type="submit" name="submitted" value="Se connecter">
+
+                </form>
+            </div>
         </div>
     </header><!-- #masthead -->
 

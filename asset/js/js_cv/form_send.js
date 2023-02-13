@@ -82,6 +82,31 @@ cvForm.addEventListener('submit', function(e){
 
         if (!isObjectEmpty(errors)) {
             console.log('ya des erreurs')
+
+            //main
+            let spanErrorJob = document.querySelector('#error_job_cv');
+            setErrorMessage(spanErrorJob, errors['job']);
+
+            let spanErrorName = document.querySelector('#error_name_cv');
+            setErrorMessage(spanErrorName, errors['name']);
+
+            let spanErrorFirstname = document.querySelector('#error_firstname_cv');
+            setErrorMessage(spanErrorFirstname, errors['firstname']);
+
+            let spanErrorEmail = document.querySelector('#error_email_cv');
+            setErrorMessage(spanErrorEmail, errors['email']);
+
+            let spanErrorPhone = document.querySelector('#error_phone_cv');
+            setErrorMessage(spanErrorPhone, errors['phone']);
+
+            let spanErrorAge = document.querySelector('#error_age_cv');
+            setErrorMessage(spanErrorAge, errors['age']);
+
+            let spanErrorDesc = document.querySelector('#error_main_desc_cv');
+            setErrorMessage(spanErrorDesc, errors['main desc']);
+
+
+
             //skill
             setErrorMessageForArray('.error_skill', errors['skills']);
 
@@ -104,7 +129,6 @@ cvForm.addEventListener('submit', function(e){
 
             //hobbies
             setErrorMessageForArray('.error_hobbie', errors['hobbies']);
-
 
         }else{
             console.log('pas derreur');
