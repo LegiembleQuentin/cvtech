@@ -1,6 +1,13 @@
 <?php
 /* Template Name: listingCV */
-
+/*global $web;
+$user = wp_get_current_user();
+if ( in_array( 'candidat', (array) $user->roles ) ) {
+    header('Location: '.path($web['page']['homepage']['slug']));
+}
+if (!is_user_logged_in()){
+    header('Location: '.path($web['page']['homepage']['slug']));
+}*/
 get_header(); ?>
     <section  class="listing">
         <div class="container">
