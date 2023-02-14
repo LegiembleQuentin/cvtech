@@ -10,7 +10,7 @@ function addCV(){
     $errors = [];
 
     $job = cleanXss('lookedJob');
-    $name = cleanXss('name');
+    $cvName = cleanXss('name');
     $firstname = cleanXss('firstname');
     $email = cleanXss('email');
     $phone = ($_POST['phone'] !== '') ? cleanXss('phone') : NULL;
@@ -18,7 +18,7 @@ function addCV(){
     $mainDesc = ($_POST['mainDesc'] !== '') ? cleanXss('mainDesc') : NULL;
 
     $errors = validationText($errors, $job, 'job', 5, 150);
-    $errors = validationText($errors, $name, 'name', 2, 150);
+    $errors = validationText($errors, $cvName, 'name', 2, 150);
     $errors = validationText($errors, $firstname, 'firstname', 2, 150);
     $errors = validationMail($errors, $email);
     $errors = validationOptionnalPhone($errors, $phone);
@@ -102,7 +102,7 @@ function addCV(){
             array(
                 'id_user' => $idUser,
                 'job' => $job,
-                'name' => $name,
+                'name' => $cvName,
                 'firstname' => $firstname,
                 'email' => $email,
                 'phone' => $phone,

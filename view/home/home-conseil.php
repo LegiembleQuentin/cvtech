@@ -1,5 +1,5 @@
 <?php
-
+global $metaHome;
 ?>
 
 <section id="conseil" >

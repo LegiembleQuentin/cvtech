@@ -2,9 +2,10 @@
 /* Template Name: cgu */
 get_header();
 ?>
-    <section class="color-cgu">
+    <section style="
+	background-color: white; color: black;" class="color-cgu">
         <div class="wrap1">
-            <h1 style="font-size: 25px; padding-top: .9rem">Mentions légales</h1>
+            <h1 style="font-size: 25px; padding-top: .9rem;">CGU</h1>
             <p>
                 En vigueur au 7 /11/ 022
                 Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la

@@ -54,6 +54,7 @@ cvForm.addEventListener('submit', function(e){
         hobbieList.push(hobbie.value);
     })
     infos.push(hobbieList);
+    console.log(name);
 
     infos = JSON.stringify(infos);
 

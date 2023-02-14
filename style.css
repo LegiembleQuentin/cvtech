@@ -252,7 +252,7 @@ img {
 
 /*cgu !!!!!!!!!!!!!!*/
 .color-cgu {
-	background: url("asset/img/fond_404.png") no-repeat center;
+	background-color: white;
 	background-size: cover;
 	color: black;
 }

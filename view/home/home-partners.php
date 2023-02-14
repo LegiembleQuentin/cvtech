@@ -1,5 +1,5 @@
 <?php
-
+global $metaHome;
 ?>
 
 
@@ -8,10 +8,10 @@
     <div class="wrap">
         <div class="left_partners">
             <div class="title_partners">
-                <h1>Diffusez simplement et gratuitement votre cv</h1>
+                <h1><?= web_r($metaHome, 'partner_title') ?></h1>
             </div>
             <div class="txt_partners">
-                <p>Votre Cv sera accessible à plus de 20 000 recruteurs qui pourront vous contacter.</p>
+                <p><?= web_r($metaHome, 'partner_text') ?></p>
                 <img src="<?php echo asset('img/svg/partners/fleche_yellow.svg'); ?>" alt="flèche jaune">
             </div>
             <div class="link_partners">

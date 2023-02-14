@@ -9,6 +9,9 @@
  * @package cvtech
  */
 global $web;
+
+global $metaHome;
+$metaHome = get_post_meta($web['page']['homepage']['id']);
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>

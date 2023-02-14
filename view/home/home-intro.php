@@ -1,5 +1,6 @@
 <?php
 global $web;
+global $metaHome;
 ?>
 <section id="intro">
     <div class="wrap3">
@@ -8,7 +9,7 @@ global $web;
                 <h1>cvtech</h1>
             </div>
             <div class="para">
-                <p>Bienvenue sur notre plateforme de gestion des CV en ligne, dédié au recrutement de techniciens qualifiés dans les domaines de l’informatique et du numérique.</p>
+                <p><?= web_r($metaHome, 'intro_text')?></p>
             </div>
             <div class="link_intro">
                 <a href="<?= path($web['page']['addcv']['slug']); ?>">Creer votre compte</a>

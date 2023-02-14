@@ -121,6 +121,7 @@ button{
 }
 
 .listing{
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

@@ -1,4 +1,5 @@
 <?php
+global $metaHome;
 ?>
 
 <section id="conclu">
@@ -7,11 +8,11 @@
     </div>
     <div class="wrap4">
         <div class="title">
-            <h1>Décrochez votre futur job avec Cvtech</h1>
+            <h1><?= web_r($metaHome, 'advice_title') ?></h1>
         </div>
         <div class="content">
-            <p>Nous vous offrons une plateforme intuitive et accessible pour que vous puissiez saisir votre CV et candidater en toute simplicité.</p>
-            <p id="important">"Rejoignez nous pour explorer de nouvelles opportunités de carrière dans l'industrie de l'informatique et du numérique."</p>
+            <p><?= web_r($metaHome, 'advice_text1') ?></p>
+            <p id="important">"<?= web_r($metaHome, 'intro_text') ?>"</p>
 
         </div>
     </div>

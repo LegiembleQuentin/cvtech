@@ -46,7 +46,6 @@ fetch(MYSCRIPT.ajaxUrl, {
     .then(data => {
         let cvInfos = data;
         data1 = data['main'];
-        console.log(cvInfos);
         data1.forEach(donnee => {
 
             const container = document.createElement('div');
