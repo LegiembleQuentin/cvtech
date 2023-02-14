@@ -1,3 +1,32 @@
+/*
+let currentPage = 1;
+let itemsPerPage = 5;
+
+const prevButton = document.createElement('button');
+prevButton.innerText = 'Précédent';
+prevButton.classList.add('prev-button');
+
+const nextButton = document.createElement('button');
+nextButton.innerText = 'Suivant';
+nextButton.classList.add('next-button');
+
+prevButton.addEventListener('click', () => {
+    if (currentPage > 1) {
+        currentPage--;
+        renderData();
+    }
+});
+
+nextButton.addEventListener('click', () => {
+    if (currentPage < totalPages) {
+        currentPage++;
+        renderData();
+    }
+});
+*/
+
+/*const totalPages = Math.ceil(data.length / itemsPerPage);
+const dataForCurrentPage = data.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);*/
 const recruteur = document.querySelector('#recruteur');
 const divModal = document.querySelector('.content_txt');
 const div_Modal = document.querySelector('#modal1')
@@ -16,14 +45,9 @@ fetch(MYSCRIPT.ajaxUrl, {
     .then(response => response.json())
     .then(data => {
         let cvInfos = data;
-        data = data['main'];
+        data1 = data['main'];
         console.log(cvInfos);
-        data.forEach(donnee => {
-            // cvInfos['formations'].forEach(formation => {
-            //     if (formation['id_CV'] == donnee['id']){
-            //         AFFICHER LES INFOS DE LA FORMATION DANS LA MODAL (ex: innerText = formation['name'])
-            //     }
-            // })
+        data1.forEach(donnee => {
 
             const container = document.createElement('div');
             container.classList.add('person-box');
@@ -61,6 +85,7 @@ fetch(MYSCRIPT.ajaxUrl, {
                 detailsDiv.appendChild(p);
             });
 
+
             container.appendChild(detailsDiv);
             container.appendChild(link);
             div_Modal.style.display = "none";
@@ -71,6 +96,103 @@ fetch(MYSCRIPT.ajaxUrl, {
                 divModal.innerHTML = '';
                 div_Modal.style.display = '';
                 divModal.appendChild(detailsDiv.cloneNode(true));
+                cvInfos['formations'].forEach(formation => {
+                    if (formation['id_CV'] == donnee['id']) {
+                        const formationDiv = document.createElement('div');
+                        const formationName = document.createElement('p');
+                        if (formation['name'] !== null) {
+                            formationName.innerText = `Nom de la formation: ${formation['name']}`;
+                        }
+                        const formationDegree = document.createElement('p');
+                        if (formation['degree'] !== null) {
+                            formationDegree.innerText = `Diplôme : ${formation['degree']}`;
+                        }
+                        const formationDesc = document.createElement('p');
+                        if (formation['desc'] !== null) {
+                            formationDesc.innerText = `Description : ${formation['desc']}`;
+                        }
+                        const formationStartingDate = document.createElement('p');
+                        if (formation['starting_date'] !== null) {
+                            formationStartingDate.innerText = `Date de début : ${formation['starting_date']}`;
+                        }
+                        const formationEndingDate = document.createElement('p');
+                        if (formation['ending_date'] !== null) {
+                            formationEndingDate.innerText = `Date de fin : ${formation['ending_date']}`;
+                        }
+
+                        formationDiv.appendChild(formationName);
+                        formationDiv.appendChild(formationDegree);
+                        formationDiv.appendChild(formationDesc);
+                        formationDiv.appendChild(formationStartingDate);
+                        formationDiv.appendChild(formationEndingDate);
+                        divModal.appendChild(formationDiv);
+                    }
+                });
+                cvInfos['exp'].forEach(experience => {
+                    if (experience['id_CV'] === donnee['id']) {
+                        const experienceDiv = document.createElement('div');
+                        const experienceName = document.createElement('p');
+                        if (experience['name'] !== null) {
+                            experienceName.innerText = `Nom de l'expérience: ${experience['name']}`;
+                            experienceDiv.appendChild(experienceName);
+                        }
+                        const experienceEmployer = document.createElement('p');
+                        if (experience['employer'] !== null) {
+                            experienceEmployer.innerText = `Employeur : ${experience['employer']}`;
+                            experienceDiv.appendChild(experienceEmployer);
+                        }
+                        const experienceDesc = document.createElement('p');
+                        if (experience['description'] !== null) {
+                            experienceDesc.innerText = `Description : ${experience['description']}`;
+                            experienceDiv.appendChild(experienceDesc);
+                        }
+                        const experienceStartingDate = document.createElement('p');
+                        if (experience['starting_date'] !== null) {
+                            experienceStartingDate.innerText = `Date de début : ${experience['starting_date']}`;
+                            experienceDiv.appendChild(experienceStartingDate);
+                        }
+                        const experienceCity = document.createElement('p');
+                        if (experience['city'] !== null) {
+                            experienceCity.innerText = `Ville : ${experience['city']}`;
+                            experienceDiv.appendChild(experienceCity);
+                        }
+                        const experienceEndingDate = document.createElement('p');
+                        if (experience['ending_date'] !== null) {
+                            experienceEndingDate.innerText = `Date de fin : ${experience['ending_date']}`;
+                            experienceDiv.appendChild(experienceEndingDate);
+                        }
+                        divModal.appendChild(experienceDiv);
+                    }
+                });
+                cvInfos['skills'].forEach(skill => {
+                    if (skill['id_CV'] === donnee['id']) {
+                        const skillDiv = document.createElement('div');
+                        const skillName = document.createElement('p');
+                        if (skill['name'] !== null) {
+                            skillName.innerText = `Nom de la compétence: ${skill['name']}`;
+                        }
+                        const skillDesc = document.createElement('p');
+                        if (skill['desc'] !== null) {
+                            skillDesc.innerText = `Description : ${skill['desc']}`;
+                        }
+                        skillDiv.appendChild(skillName);
+                        skillDiv.appendChild(skillDesc);
+                        divModal.appendChild(skillDiv);
+                    }
+                });
+
+                cvInfos['hobbies'].forEach(hobby => {
+                    if (hobby['id_CV'] === donnee['id']) {
+                        if (hobby['name'] != null) {
+                            const hobbyDiv = document.createElement('div');
+                            const hobbyName = document.createElement('p');
+                            hobbyName.innerText = `Nom : ${hobby['name']}`;
+                            hobbyDiv.appendChild(hobbyName);
+                            divModal.appendChild(hobbyDiv);
+                        }
+                    }
+                });
+
             });
 
             link.addEventListener('click', () => {
@@ -79,8 +201,103 @@ fetch(MYSCRIPT.ajaxUrl, {
                 divModal.innerHTML = '';
                 div_Modal.style.display = '';
                 divModal.appendChild(detailsDiv.cloneNode(true));
-            });
+                cvInfos['formations'].forEach(formation => {
+                    if (formation['id_CV'] == donnee['id']) {
+                        const formationDiv = document.createElement('div');
+                        const formationName = document.createElement('p');
+                        if (formation['name'] !== null) {
+                            formationName.innerText = `Nom de la formation: ${formation['name']}`;
+                        }
+                        const formationDegree = document.createElement('p');
+                        if (formation['degree'] !== null) {
+                            formationDegree.innerText = `Diplôme : ${formation['degree']}`;
+                        }
+                        const formationDesc = document.createElement('p');
+                        if (formation['desc'] !== null) {
+                            formationDesc.innerText = `Description : ${formation['desc']}`;
+                        }
+                        const formationStartingDate = document.createElement('p');
+                        if (formation['starting_date'] !== null) {
+                            formationStartingDate.innerText = `Date de début : ${formation['starting_date']}`;
+                        }
+                        const formationEndingDate = document.createElement('p');
+                        if (formation['ending_date'] !== null) {
+                            formationEndingDate.innerText = `Date de fin : ${formation['ending_date']}`;
+                        }
 
+                        formationDiv.appendChild(formationName);
+                        formationDiv.appendChild(formationDegree);
+                        formationDiv.appendChild(formationDesc);
+                        formationDiv.appendChild(formationStartingDate);
+                        formationDiv.appendChild(formationEndingDate);
+                        divModal.appendChild(formationDiv);
+                    }
+                });
+                cvInfos['exp'].forEach(experience => {
+                    if (experience['id_CV'] === donnee['id']) {
+                        const experienceDiv = document.createElement('div');
+                        const experienceName = document.createElement('p');
+                        if (experience['name'] !== null) {
+                            experienceName.innerText = `Nom de l'expérience: ${experience['name']}`;
+                            experienceDiv.appendChild(experienceName);
+                        }
+                        const experienceEmployer = document.createElement('p');
+                        if (experience['employer'] !== null) {
+                            experienceEmployer.innerText = `Employeur : ${experience['employer']}`;
+                            experienceDiv.appendChild(experienceEmployer);
+                        }
+                        const experienceDesc = document.createElement('p');
+                        if (experience['description'] !== null) {
+                            experienceDesc.innerText = `Description : ${experience['description']}`;
+                            experienceDiv.appendChild(experienceDesc);
+                        }
+                        const experienceStartingDate = document.createElement('p');
+                        if (experience['starting_date'] !== null) {
+                            experienceStartingDate.innerText = `Date de début : ${experience['starting_date']}`;
+                            experienceDiv.appendChild(experienceStartingDate);
+                        }
+                        const experienceCity = document.createElement('p');
+                        if (experience['city'] !== null) {
+                            experienceCity.innerText = `Ville : ${experience['city']}`;
+                            experienceDiv.appendChild(experienceCity);
+                        }
+                        const experienceEndingDate = document.createElement('p');
+                        if (experience['ending_date'] !== null) {
+                            experienceEndingDate.innerText = `Date de fin : ${experience['ending_date']}`;
+                            experienceDiv.appendChild(experienceEndingDate);
+                        }
+                        divModal.appendChild(experienceDiv);
+                    }
+                });
+                cvInfos['skills'].forEach(skill => {
+                    if (skill['id_CV'] === donnee['id']) {
+                        const skillDiv = document.createElement('div');
+                        const skillName = document.createElement('p');
+                        if (skill['name'] !== null) {
+                            skillName.innerText = `Nom de la compétence: ${skill['name']}`;
+                        }
+                        const skillDesc = document.createElement('p');
+                        if (skill['desc'] !== null) {
+                            skillDesc.innerText = `Description : ${skill['desc']}`;
+                        }
+                        skillDiv.appendChild(skillName);
+                        skillDiv.appendChild(skillDesc);
+                        divModal.appendChild(skillDiv);
+                    }
+                });
+
+                cvInfos['hobbies'].forEach(hobby => {
+                    if (hobby['id_CV'] === donnee['id']) {
+                        if (hobby['name'] != null) {
+                            const hobbyDiv = document.createElement('div');
+                            const hobbyName = document.createElement('p');
+                            hobbyName.innerText = `Nom : ${hobby['name']}`;
+                            hobbyDiv.appendChild(hobbyName);
+                            divModal.appendChild(hobbyDiv);
+                        }
+                    }
+                });
+            });
             recruteur.appendChild(container);
         });
 

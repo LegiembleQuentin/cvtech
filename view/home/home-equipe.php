@@ -8,22 +8,22 @@
         <div class="container">
             <div class="equipe_left">
                 <div class="img">
-                    <img src="<?php echo asset('img/equipe/prince.svg'); ?>" alt="">
+                    <img src="<?php echo asset('img/equipe/quentin.jpg'); ?>" alt="">
                 </div>
                 <div class="img">
-                    <img src="<?php echo asset('img/equipe/prince.svg'); ?>" alt="">
+                    <img src="<?php echo asset('img/equipe/prince.jpg'); ?>" alt="">
                 </div>
                 <div class="img">
-                    <img src="<?php echo asset('img/equipe/lendoly.svg'); ?>" alt="">
+                    <img src="<?php echo asset('img/equipe/theo.jpg'); ?>" alt="">
                 </div>
                 <div class="img">
-                    <img src="<?php echo asset('img/equipe/mohamed.svg'); ?>" alt="">
+                    <img src="<?php echo asset('img/equipe/lucas.jpg'); ?>" alt="">
                 </div>
             </div>
             <div class="equpie_right">
                 <div class="img_grand">
                     <div class="img_profil">
-                        <img src="<?php echo asset('img/equipe/prince.svg'); ?>" alt="">
+                        <img src="<?php echo asset('img/equipe/prince.jpg'); ?>" alt="">
                     </div>
                     <div class="reseaux">
                         <img src="<?php echo asset('img/equipe/logo_linkedin.svg'); ?>" alt="linkedin">
@@ -33,8 +33,8 @@
                 </div>
                 <div class="txt_profil">
                     <div class="nom_prenom">
+                        <p>Prénom : </p>
                         <p>Nom : </p>
-                        <p>Prenom : </p>
                     </div>
                     <div class="age_job">
                         <p>Age :</p>

@@ -11,29 +11,29 @@ $(window).on('load',function () {
 
 const team = [
     {
-        name: "Quentin",
-        firstName: "Legiemble",
+        name: "Legiemble",
+        firstName: "Quentin",
         age: 22,
         job: "Developpeur Fullstack",
         desc: "La collaboration est la clé pour faire un excellent travail."
     },
     {
-        name: "Prince",
-        firstName: "Petyth",
+        name: "Petyth",
+        firstName: "Prince",
         age: 23,
         job: "Developpeur Fullstack",
         desc: "Nous former une équipe inarrêtable."
     },
     {
-        name: "Theo",
-        firstName: "Lemettais",
+        name: "Lemettais",
+        firstName: "Theo",
         age: 21,
         job: "Developpeur Fullstack",
         desc: "c'est en équipe que nous allons plus loin."
     },
     {
-        name: "Lucas",
-        firstName: "Eliot",
+        name: " Eliot",
+        firstName: "Lucas",
         age: 20,
         job: "Developpeur Fullstack",
         desc: "L'union fait la force."
