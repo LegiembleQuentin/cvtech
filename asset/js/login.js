@@ -3,6 +3,7 @@ const loginBurger = document.querySelector('#login_burger')
 const btnConnexion = document.querySelector('#login form input[type=submit]')
 const modalLogin = document.querySelector('#login')
 const xmark = document.querySelector('#login div.xmark')
+const checkbox = document.querySelector('#rememberMe');
 
 loginNav.addEventListener('click', toggleModal(modalLogin));
 loginBurger.addEventListener('click', toggleModal(modalLogin));
@@ -19,6 +20,7 @@ btnConnexion.addEventListener('click', function (e) {
     params.append('action', 'get_login');
     params.append('log', inputEmail.value);
     params.append('pwd', inputPassword.value);
+    params.append('rememberme', checkbox.checked);
 
     fetch(MYSCRIPT.ajaxUrl, {
         method: 'post',

@@ -8,7 +8,7 @@
  *
  * @package cvtech
  */
-
+global $web;
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -30,30 +30,37 @@
 
         <div class="wrap3 header">
             <div class="logo-header">
-                <img src="<?= asset('/img/logo-CvTech-rogner.png')?>" alt="">
+                <a href="<?= path($web['page']['homepage']['slug']); ?>"><img src="<?= asset('/img/logo-CvTech-rogner.png')?>" alt=""></a>
             </div>
             <nav class="d-block">
                 <ul class="d-flex gaptwo">
                     <div class="gap d-flex d-block gaptwo">
                         <li class="border-twenty dropdown">
-                            <a class="color-white survol box-yellow replace" href="#">Creer un Cv</a>
+                            <a class="color-white survol box-yellow replace" href="<?= path($web['page']['addcv']['slug']); ?>">Creer un Cv</a>
                             <div class="dropdown-content">
                                 <div class="content">
-                                    <a href="#">Creer un Cv</a>
-                                    <a href="#">Creer un design</a>
+                                        <a href="<?= path($web['page']['addcv']['slug']); ?>?>">Creer un Cv</a>
+                                        <a href="<?= path($web['page']['addcv']['slug']); ?>">Creer un design</a>
                                 </div>
                             </div>
                          <i class="fa-solid fa-chevron-down"></i>
                         </li>
-                        <li class=" border-twenty">
-                            <a class="color-white survol box-yellow" href="" title="">Contactez-Nous</a>
-                        </li>
-                        <li class="border-twenty">
-                            <a class="li-header color-white box-yellow" href="" title="">Inscription</a>
-                        </li>
-                        <li class=" border-twenty">
-                            <a id="login_nav" class="li-header color-white box-yellow" href="" title="">Connexion</a>
-                        </li>
+
+                        <?php if (!is_user_logged_in()){ ?>
+                            <li class=" border-twenty">
+                                <a class="color-white survol box-yellow" href="<?= path($web['page']['contact']['slug']); ?>" title="">Contactez-Nous</a>
+                            </li>
+                            <li class="border-twenty">
+                                <a class="li-header color-white box-yellow" href="<?= path($web['page']['register']['slug']); ?>" title="">Inscription</a>
+                            </li>
+                            <li class=" border-twenty">
+                                <a id="login_nav" class="li-header color-white box-yellow" href="" title="">Connexion</a>
+                            </li>
+                        <?php }else { ?>
+                            <li class="border-twenty">
+                                <a class="li-header color-white box-yellow" href="<?= path($web['page']['logout']['slug']); ?>" title="">Déconnexion</a>
+                            </li>
+                        <?php } ?>
                     </div>
                 </ul>
             </nav>
@@ -62,9 +69,9 @@
                 <nav id="burger-menu">
                     <button id="close-menu-button">&times;</button>
                     <ul>
-                        <li  class=" border-top li-header"><a class="a-header" href="#">Contactez-Nous</a></li>
-                        <li  class="li-header"><a class="a-header"="#">Inscription</a></li>
-                        <li  class="li-header" id="login_burger"><a class="a-header" href="#">Connexion</a></li>
+                        <li  class=" border-top li-header"><a class="a-header" href="<?= path($web['page']['contact']['slug']); ?>">Contactez-Nous</a></li>
+                        <li  class="li-header"><a class="a-header"="<?= path($web['page']['register']['slug']); ?>">Inscription</a></li>
+                        <li  class="li-header" id="login_burger"><a class="a-header" href="">Connexion</a></li>
                     </ul>
                 </nav>
         </div>
@@ -81,6 +88,9 @@
                         <a href="forgotpassword.php">Mot de passe oublié ?</a>
                     </div>
 
+                    <div class="remberMe">
+                        <p><input type="checkbox" id="rememberMe">Se rappeler de moi? </p>
+                    </div>
                     <span class="error"></span>
 
                     <input type="submit" name="submitted" value="Se connecter">

@@ -14,7 +14,7 @@ let errorIdentifiant = document.querySelector('#error_id_register')
 const inputEmail = document.querySelector('#email');
 let errorEmail = document.querySelector('#error_email_register')
 
-const inputPassword = document.querySelector('#password');
+const inputPassword = document.querySelector('#password_register');
 let errorPassword = document.querySelector('#error_password_register')
 
 const inputPassword2 = document.querySelector('#password2');
@@ -94,6 +94,8 @@ form.addEventListener('submit', function (e) {
         if (inputBirthdate.value) {
             params.append('birthdate', inputBirthdate.value);
         }
+
+        console.log(inputName.value, inputFirstname.value, inputIdentifiant.value, inputEmail.value, inputPassword.value, inputPhone.value, inputBirthdate.value);
 
         fetch(MYSCRIPT.ajaxUrl, {
             method: 'post',

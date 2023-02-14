@@ -63,9 +63,9 @@ img {
 .wrap3 {max-width: 1200px;width:100%;margin: 0 auto}
 
 
-.hidden {
-	display: none;
-}
+/*.hidden {*/
+/*	display: none;*/
+/*}*/
 
 
 
@@ -342,6 +342,13 @@ img {
 	content: "\f333";
 	color: #F8C44C;
 }
+.link_footer{
+	color: white;
+	transition: all 0.3s ease;
+}
+.link_footer:hover {
+	color: #F8C44C;
+}
 span.dashicons.dashicons-twitter.color-white {
 	font-size: 35px;
 }
@@ -448,18 +455,24 @@ header#masthead {
 	transition: all .4s;
 }
 
-/* MODAL LOGIN */
+form#formulaire {
+	margin-bottom: 14rem;
+}
+form#formulaire textarea{
+	resize: none;
+}
 
+/* MODAL LOGIN */
 #login input {
 	padding: 1rem;
 	border-radius: 15px;
+	border: none;
 	width: 40rem;
-	background-color: var(--white);
+	background-color: white;
 }
 #login input[type=submit]{
 	width: 20rem;
 	transition: all .5s;
-	font-family: 'Poppins', sans-serif;
 	font-size: 1.3rem;
 }
 #login input[type=submit]:disabled {
@@ -473,13 +486,15 @@ header#masthead {
 	color: white;
 }
 #login {
+	font-family: 'Poppins', sans-serif;
 	z-index: 2;
-	background-color: red;
+	background-color: #F8C44C;
 	width: 600px;
 	padding: 2rem;
 	position: absolute;
 	right: 25px;
 	top: 80px;
+	border: solid 1px white;
 	border-radius: 15px;
 	transition: all .7s;
 	opacity: 100;
@@ -491,6 +506,12 @@ header#masthead {
 }
 #login .loginform .xmark:hover{
 	cursor: pointer;
+}
+#login .remberMe p input{
+	padding: 0;
+	border-radius: 15px;
+	width: initial;
+	background-color: white;
 }
 #login.hidden {
 	transition: all .7s;
@@ -504,4 +525,27 @@ header#masthead {
 }
 #login form .password a{
 	display: block;
+	color: black;
+}
+#login span.error{
+	color: red;
+}
+
+
+@media screen and (max-width: 700px) {
+	#login {
+		width: 100%;
+		right: 0px;
+	}
+	#login form{
+		margin-top: 2rem;
+	}
+	#login .xmark{
+		margin-left: auto;
+		align-items: end;
+		float: initial !important;
+	}
+	#login input{
+		width: 100%;
+	}
 }

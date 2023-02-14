@@ -1,4 +1,6 @@
-<?php ?>
+<?php
+global $web;
+?>
 
 
 
@@ -38,6 +40,6 @@
         </div>
     </div>
     <div class="link">
-        <a href="">Créer votre design</a>
+        <a href="<?= path($web['page']['addcv']['slug']); ?>">Créer votre design</a>
     </div>
 </section>

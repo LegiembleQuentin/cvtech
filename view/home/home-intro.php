@@ -1,4 +1,5 @@
 <?php
+global $web;
 ?>
 <section id="intro">
     <div class="wrap3">
@@ -10,7 +11,7 @@
                 <p>Bienvenue sur notre plateforme de gestion des CV en ligne, dédié au recrutement de techniciens qualifiés dans les domaines de l’informatique et du numérique.</p>
             </div>
             <div class="link_intro">
-                <a href="">Creer votre compte</a>
+                <a href="<?= path($web['page']['addcv']['slug']); ?>">Creer votre compte</a>
             </div>
         </div>
     </div>

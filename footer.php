@@ -8,7 +8,7 @@
  *
  * @package cvtech
  */
-
+global $web;
 ?>
 
 <footer id="colophon" class="site-footer">
@@ -26,10 +26,10 @@
         </div>
         <div class="wrap1 padding-footer">
             <ul class="gaptwo d-flex center j-content-center ul-footer ">
-                <li class="color-white survol"><a href="#"></a> CGU</li>
-                <li class="color-white survol"><a href="#"></a> Mentions légales </li>
-                <li class="color-white survol"><a href="#"></a>Contactez-nous </li>
-                <li class="color-white survol"><a href="#"></a>Gérer les Cookies </li>
+                <li class="color-white survol"><a class="link_footer" href="<?= path($web['page']['cgu']['slug']); ?>">CGU</a></li>
+                <li class="color-white survol"><a class="link_footer" href="<?= path($web['page']['mentions']['slug']); ?>">Mentions légales</a></li>
+                <li class="color-white survol"><a class="link_footer" href="<?= path($web['page']['mentions']['slug']); ?>">Contactez-nous</a></li>
+                <li class="color-white survol"><a class="link_footer" href="#">Gérer les Cookies</a></li>
             </ul>
         </div>
         <div class="color-white droitfooter padding-footer ">
